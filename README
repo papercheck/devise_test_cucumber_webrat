@@ -1,3 +1,5 @@
+This simple scaffold was built to test step one of the series of four part tests. Webrat + Cucumber is unable to see flash notices sent from the Rack level.
+
 1) Log-in to Devise using Cucumber + Webrat
     a) There is no documentation for this method
 2) Log-in to Devise using Cucumber + Capybara
