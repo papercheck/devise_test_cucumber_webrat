@@ -1,0 +1,2205 @@
+# Logfile created on Thu Jul 15 01:33:28 -0700 2010REQUESTING PAGE: GET /users/sign_up with {} and HTTP headers {}
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-07-15 01:34:03) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (3.5ms)
+Completed in 67ms (View: 22, DB: 0) | 200 OK [http://www.example.com/users/sign_up]
+REQUESTING PAGE: GET /users/sign_up with {} and HTTP headers {}
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-07-15 01:34:24) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (2.2ms)
+Completed in 26ms (View: 14, DB: 0) | 200 OK [http://www.example.com/users/sign_up]
+REQUESTING PAGE: POST /users with {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}} and HTTP headers {"HTTP_REFERER"=>"/users/sign_up"}
+
+
+Processing RegistrationsController#create (for 127.0.0.1 at 2010-07-15 01:34:24) [POST]
+  Parameters: {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = 'joe_unconfirmed@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.8ms)[0m   [0mINSERT INTO "users" ("encrypted_password", "created_at", "confirmation_sent_at", "last_sign_in_ip", "updated_at", "last_sign_in_at", "sign_in_count", "password_salt", "reset_password_token", "remember_token", "current_sign_in_ip", "confirmation_token", "remember_created_at", "current_sign_in_at", "email", "confirmed_at") VALUES('752b42487370d69e9c35258123535192cbc714ab', '2010-07-15 08:34:24', NULL, NULL, '2010-07-15 08:34:24', NULL, 0, 'SSmz8KJUPIcSHFoSEuBY', NULL, NULL, NULL, NULL, NULL, NULL, 'joe_unconfirmed@example.com', NULL)[0m
+  [4;36;1mUser Update (0.6ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2010-07-15 08:34:24', "sign_in_count" = 1, "current_sign_in_at" = '2010-07-15 08:34:24', "current_sign_in_ip" = '127.0.0.1', "last_sign_in_at" = '2010-07-15 08:34:24', "last_sign_in_ip" = '127.0.0.1' WHERE "id" = 1[0m
+Redirected to http://www.example.com/
+Completed in 79ms (DB: 2) | 302 Found [http://www.example.com/users]
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 01:34:25) [GET]
+  [4;35;1mBeer Load (0.2ms)[0m   [0mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 9ms (View: 3, DB: 0) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /users/sign_up with {} and HTTP headers {}
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-07-15 01:36:35) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (2.1ms)
+Completed in 24ms (View: 14, DB: 0) | 200 OK [http://www.example.com/users/sign_up]
+REQUESTING PAGE: POST /users with {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}} and HTTP headers {"HTTP_REFERER"=>"/users/sign_up"}
+
+
+Processing RegistrationsController#create (for 127.0.0.1 at 2010-07-15 01:36:35) [POST]
+  Parameters: {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = 'joe_unconfirmed@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.7ms)[0m   [0mINSERT INTO "users" ("encrypted_password", "created_at", "confirmation_sent_at", "last_sign_in_ip", "updated_at", "last_sign_in_at", "sign_in_count", "password_salt", "reset_password_token", "remember_token", "current_sign_in_ip", "confirmation_token", "remember_created_at", "current_sign_in_at", "email", "confirmed_at") VALUES('3d9f3293e12cba7f06f0ba013e68bea16394f4a8', '2010-07-15 08:36:35', '2010-07-15 08:36:35', NULL, '2010-07-15 08:36:35', NULL, 0, '3_AYIeqxqHfsXgC-bJcx', NULL, NULL, NULL, '_du6BQ0C3sIWp74kSYH8', NULL, NULL, 'joe_unconfirmed@example.com', NULL)[0m
+
+
+Processing ApplicationController#create (for 127.0.0.1 at 2010-07-15 01:36:35) [POST]
+  Parameters: {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}}
+REQUESTING PAGE: GET /users/sign_up with {} and HTTP headers {}
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-07-15 10:54:37) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (2.7ms)
+Completed in 98ms (View: 38, DB: 0) | 200 OK [http://www.example.com/users/sign_up]
+REQUESTING PAGE: POST /users with {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}} and HTTP headers {"HTTP_REFERER"=>"/users/sign_up"}
+
+
+Processing RegistrationsController#create (for 127.0.0.1 at 2010-07-15 10:54:37) [POST]
+  Parameters: {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = 'joe_unconfirmed@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.6ms)[0m   [0mINSERT INTO "users" ("encrypted_password", "created_at", "confirmation_sent_at", "last_sign_in_ip", "updated_at", "last_sign_in_at", "sign_in_count", "password_salt", "reset_password_token", "remember_token", "current_sign_in_ip", "confirmation_token", "remember_created_at", "current_sign_in_at", "email", "confirmed_at") VALUES('0adcfdf7044349d43603ceaf082d8d22d59ef3ce', '2010-07-15 17:54:37', '2010-07-15 17:54:37', NULL, '2010-07-15 17:54:37', NULL, 0, 'Tgv40nnnZQ-snIu-_iyI', NULL, NULL, NULL, '96r1dsobSPTNPWkuoc_6', NULL, NULL, 'joe_unconfirmed@example.com', NULL)[0m
+
+
+Processing ApplicationController#create (for 127.0.0.1 at 2010-07-15 10:54:37) [POST]
+  Parameters: {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}}
+REQUESTING PAGE: GET /users/sign_up with {} and HTTP headers {}
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-07-15 10:57:37) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (3.4ms)
+Completed in 48ms (View: 35, DB: 0) | 200 OK [http://www.example.com/users/sign_up]
+REQUESTING PAGE: POST /users with {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}} and HTTP headers {"HTTP_REFERER"=>"/users/sign_up"}
+
+
+Processing RegistrationsController#create (for 127.0.0.1 at 2010-07-15 10:57:38) [POST]
+  Parameters: {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = 'joe_unconfirmed@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.9ms)[0m   [0mINSERT INTO "users" ("encrypted_password", "created_at", "confirmation_sent_at", "last_sign_in_ip", "updated_at", "last_sign_in_at", "sign_in_count", "password_salt", "reset_password_token", "remember_token", "current_sign_in_ip", "confirmation_token", "remember_created_at", "current_sign_in_at", "email", "confirmed_at") VALUES('80f1fc652e7152582bdfffdb3c7358b1cdd0c3c6', '2010-07-15 17:57:38', '2010-07-15 17:57:38', NULL, '2010-07-15 17:57:38', NULL, 0, 'X85ZmZARBvd7dt8ghpqd', NULL, NULL, NULL, 'I9bKRZipQFqMZiElVgSn', NULL, NULL, 'joe_unconfirmed@example.com', NULL)[0m
+Sent mail to joe_unconfirmed@example.com
+
+Date: Thu, 15 Jul 2010 10:57:38 -0700
+From: please-change-me@config-initializers-devise.com
+To: joe_unconfirmed@example.com
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<p>Welcome joe_unconfirmed@example.com!</p>
+
+<p>You can confirm your account through the link below:</p>
+
+<p><a href="http://test.host/users/confirmation?confirmation_token=I9bKRZipQFqMZiElVgSn">Confirm my account</a></p>
+REQUESTING PAGE: GET /users/sign_up with {} and HTTP headers {}
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-07-15 11:02:59) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (2.1ms)
+Completed in 28ms (View: 16, DB: 0) | 200 OK [http://www.example.com/users/sign_up]
+REQUESTING PAGE: POST /users with {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}} and HTTP headers {"HTTP_REFERER"=>"/users/sign_up"}
+
+
+Processing RegistrationsController#create (for 127.0.0.1 at 2010-07-15 11:02:59) [POST]
+  Parameters: {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = 'joe_unconfirmed@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.6ms)[0m   [0mINSERT INTO "users" ("encrypted_password", "created_at", "confirmation_sent_at", "last_sign_in_ip", "updated_at", "last_sign_in_at", "sign_in_count", "password_salt", "reset_password_token", "remember_token", "current_sign_in_ip", "confirmation_token", "remember_created_at", "current_sign_in_at", "email", "confirmed_at") VALUES('0ddb59829d69366704c2f3c0e2b01af2c37d523d', '2010-07-15 18:02:59', '2010-07-15 18:02:59', NULL, '2010-07-15 18:02:59', NULL, 0, 'XpNSQZI_NPWnH-Cffjcm', NULL, NULL, NULL, 'OzPj2dzGkXTYtxr4K7vl', NULL, NULL, 'joe_unconfirmed@example.com', NULL)[0m
+Sent mail to joe_unconfirmed@example.com
+
+Date: Thu, 15 Jul 2010 11:02:59 -0700
+From: please-change-me@config-initializers-devise.com
+To: joe_unconfirmed@example.com
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<p>Welcome joe_unconfirmed@example.com!</p>
+
+<p>You can confirm your account through the link below:</p>
+
+<p><a href="http://test.host/users/confirmation?confirmation_token=OzPj2dzGkXTYtxr4K7vl">Confirm my account</a></p>
+REQUESTING PAGE: GET /users/sign_up with {} and HTTP headers {}
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-07-15 11:06:10) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (2.0ms)
+Completed in 24ms (View: 14, DB: 0) | 200 OK [http://www.example.com/users/sign_up]
+REQUESTING PAGE: POST /users with {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}} and HTTP headers {"HTTP_REFERER"=>"/users/sign_up"}
+
+
+Processing RegistrationsController#create (for 127.0.0.1 at 2010-07-15 11:06:10) [POST]
+  Parameters: {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = 'joe_unconfirmed@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.6ms)[0m   [0mINSERT INTO "users" ("encrypted_password", "created_at", "confirmation_sent_at", "last_sign_in_ip", "updated_at", "last_sign_in_at", "sign_in_count", "password_salt", "reset_password_token", "remember_token", "current_sign_in_ip", "confirmation_token", "remember_created_at", "current_sign_in_at", "email", "confirmed_at") VALUES('1bed1f99c4df20da13aa2ef7c7907dcd3d73c886', '2010-07-15 18:06:10', NULL, NULL, '2010-07-15 18:06:10', NULL, 0, 'maVd6Ku8C8rynSNf1bNr', NULL, NULL, NULL, NULL, NULL, NULL, 'joe_unconfirmed@example.com', NULL)[0m
+  [4;36;1mUser Update (0.5ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2010-07-15 18:06:10', "sign_in_count" = 1, "current_sign_in_at" = '2010-07-15 18:06:10', "current_sign_in_ip" = '127.0.0.1', "last_sign_in_at" = '2010-07-15 18:06:10', "last_sign_in_ip" = '127.0.0.1' WHERE "id" = 1[0m
+Redirected to http://www.example.com/
+Completed in 23ms (DB: 1) | 302 Found [http://www.example.com/users]
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 11:06:10) [GET]
+  [4;35;1mBeer Load (0.3ms)[0m   [0mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 10ms (View: 3, DB: 0) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /users/sign_up with {} and HTTP headers {}
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-07-15 11:19:20) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (1.8ms)
+Completed in 24ms (View: 13, DB: 0) | 200 OK [http://www.example.com/users/sign_up]
+REQUESTING PAGE: POST /users with {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}} and HTTP headers {"HTTP_REFERER"=>"/users/sign_up"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 11:19:20) [POST]
+  Parameters: {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}}
+  [4;36;1mBeer Load (0.3ms)[0m   [0;1mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://www.example.com/users]
+REQUESTING PAGE: GET /users/sign_up with {} and HTTP headers {}
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-07-15 11:19:36) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (1.9ms)
+Completed in 24ms (View: 13, DB: 0) | 200 OK [http://www.example.com/users/sign_up]
+REQUESTING PAGE: POST /users with {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}} and HTTP headers {"HTTP_REFERER"=>"/users/sign_up"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 11:19:36) [POST]
+  Parameters: {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}}
+  [4;36;1mBeer Load (0.3ms)[0m   [0;1mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 11ms (View: 4, DB: 0) | 200 OK [http://www.example.com/users]
+REQUESTING PAGE: GET /users/sign_up with {} and HTTP headers {}
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-07-15 11:20:08) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (2.2ms)
+Completed in 24ms (View: 14, DB: 0) | 200 OK [http://www.example.com/users/sign_up]
+REQUESTING PAGE: POST /users with {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}} and HTTP headers {"HTTP_REFERER"=>"/users/sign_up"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 11:20:08) [POST]
+  Parameters: {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}}
+  [4;36;1mBeer Load (0.3ms)[0m   [0;1mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://www.example.com/users]
+REQUESTING PAGE: GET /users/sign_up with {} and HTTP headers {}
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-07-15 11:22:25) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (1.9ms)
+Completed in 24ms (View: 13, DB: 0) | 200 OK [http://www.example.com/users/sign_up]
+REQUESTING PAGE: POST /users with {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}} and HTTP headers {"HTTP_REFERER"=>"/users/sign_up"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 11:22:25) [POST]
+  Parameters: {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}}
+  [4;36;1mBeer Load (0.7ms)[0m   [0;1mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 14ms (View: 4, DB: 1) | 200 OK [http://www.example.com/users]
+REQUESTING PAGE: GET /users/sign_up with {} and HTTP headers {}
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-07-15 11:22:44) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (2.1ms)
+Completed in 25ms (View: 14, DB: 0) | 200 OK [http://www.example.com/users/sign_up]
+REQUESTING PAGE: POST /users with {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}} and HTTP headers {"HTTP_REFERER"=>"/users/sign_up"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 11:22:44) [POST]
+  Parameters: {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}}
+  [4;36;1mBeer Load (0.3ms)[0m   [0;1mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://www.example.com/users]
+REQUESTING PAGE: GET /users/sign_up with {} and HTTP headers {}
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-07-15 11:23:09) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (1.9ms)
+Completed in 23ms (View: 13, DB: 0) | 200 OK [http://www.example.com/users/sign_up]
+REQUESTING PAGE: POST /users with {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}} and HTTP headers {"HTTP_REFERER"=>"/users/sign_up"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 11:23:09) [POST]
+  Parameters: {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}}
+  [4;36;1mBeer Load (0.3ms)[0m   [0;1mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://www.example.com/users]
+REQUESTING PAGE: GET /users/sign_up with {} and HTTP headers {}
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-07-15 11:23:28) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (2.0ms)
+Completed in 23ms (View: 13, DB: 0) | 200 OK [http://www.example.com/users/sign_up]
+REQUESTING PAGE: POST /users with {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}} and HTTP headers {"HTTP_REFERER"=>"/users/sign_up"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 11:23:28) [POST]
+  Parameters: {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}}
+  [4;36;1mBeer Load (0.4ms)[0m   [0;1mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 9ms (View: 3, DB: 0) | 200 OK [http://www.example.com/users]
+REQUESTING PAGE: GET /users/sign_up with {} and HTTP headers {}
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-07-15 11:23:36) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (1.9ms)
+Completed in 24ms (View: 14, DB: 0) | 200 OK [http://www.example.com/users/sign_up]
+REQUESTING PAGE: POST /users with {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}} and HTTP headers {"HTTP_REFERER"=>"/users/sign_up"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 11:23:37) [POST]
+  Parameters: {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}}
+  [4;36;1mBeer Load (0.4ms)[0m   [0;1mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://www.example.com/users]
+REQUESTING PAGE: GET /users/sign_up with {} and HTTP headers {}
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-07-15 11:23:55) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (1.8ms)
+Completed in 23ms (View: 13, DB: 0) | 200 OK [http://www.example.com/users/sign_up]
+REQUESTING PAGE: POST /users with {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}} and HTTP headers {"HTTP_REFERER"=>"/users/sign_up"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 11:23:55) [POST]
+  Parameters: {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}}
+  [4;36;1mBeer Load (0.3ms)[0m   [0;1mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://www.example.com/users]
+REQUESTING PAGE: GET /users/sign_up with {} and HTTP headers {}
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-07-15 11:24:35) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (2.4ms)
+Completed in 25ms (View: 14, DB: 0) | 200 OK [http://www.example.com/users/sign_up]
+REQUESTING PAGE: POST /users with {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}} and HTTP headers {"HTTP_REFERER"=>"/users/sign_up"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 11:24:35) [POST]
+  Parameters: {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}}
+  [4;36;1mBeer Load (0.4ms)[0m   [0;1mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 11ms (View: 4, DB: 0) | 200 OK [http://www.example.com/users]
+REQUESTING PAGE: GET /users/sign_up with {} and HTTP headers {}
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-07-15 11:29:17) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (2.2ms)
+Completed in 27ms (View: 16, DB: 0) | 200 OK [http://www.example.com/users/sign_up]
+REQUESTING PAGE: POST /users with {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}} and HTTP headers {"HTTP_REFERER"=>"/users/sign_up"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 11:29:17) [POST]
+  Parameters: {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}}
+  [4;36;1mBeer Load (0.3ms)[0m   [0;1mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 11ms (View: 4, DB: 0) | 200 OK [http://www.example.com/users]
+REQUESTING PAGE: GET /users/sign_up with {} and HTTP headers {}
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-07-15 13:08:22) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (3.1ms)
+Completed in 106ms (View: 92, DB: 0) | 200 OK [http://www.example.com/users/sign_up]
+REQUESTING PAGE: POST /users with {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}} and HTTP headers {"HTTP_REFERER"=>"/users/sign_up"}
+
+
+Processing RegistrationsController#create (for 127.0.0.1 at 2010-07-15 13:08:22) [POST]
+  Parameters: {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = 'joe_unconfirmed@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.7ms)[0m   [0mINSERT INTO "users" ("encrypted_password", "created_at", "confirmation_sent_at", "last_sign_in_ip", "updated_at", "last_sign_in_at", "sign_in_count", "password_salt", "reset_password_token", "remember_token", "current_sign_in_ip", "confirmation_token", "remember_created_at", "current_sign_in_at", "email", "confirmed_at") VALUES('d65306c27370553e7c093048373a99c06b9a1a44', '2010-07-15 20:08:22', '2010-07-15 20:08:22', NULL, '2010-07-15 20:08:22', NULL, 0, '2frZfC2bNmlHLTjJWDpx', NULL, NULL, NULL, 'uKcmVFOf9k8V6NDEyqqh', NULL, NULL, 'joe_unconfirmed@example.com', NULL)[0m
+Sent mail to joe_unconfirmed@example.com
+
+Date: Thu, 15 Jul 2010 13:08:22 -0700
+From: please-change-me@config-initializers-devise.com
+To: joe_unconfirmed@example.com
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<p>Welcome joe_unconfirmed@example.com!</p>
+
+<p>You can confirm your account through the link below:</p>
+
+<p><a href="http://test.host/users/confirmation?confirmation_token=uKcmVFOf9k8V6NDEyqqh">Confirm my account</a></p>
+REQUESTING PAGE: GET /users/sign_up with {} and HTTP headers {}
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-07-15 13:09:40) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (3.1ms)
+Completed in 113ms (View: 97, DB: 0) | 200 OK [http://www.example.com/users/sign_up]
+REQUESTING PAGE: POST /users with {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}} and HTTP headers {"HTTP_REFERER"=>"/users/sign_up"}
+
+
+Processing RegistrationsController#create (for 127.0.0.1 at 2010-07-15 13:09:40) [POST]
+  Parameters: {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = 'joe_unconfirmed@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.7ms)[0m   [0mINSERT INTO "users" ("encrypted_password", "created_at", "confirmation_sent_at", "last_sign_in_ip", "updated_at", "last_sign_in_at", "sign_in_count", "password_salt", "reset_password_token", "remember_token", "current_sign_in_ip", "confirmation_token", "remember_created_at", "current_sign_in_at", "email", "confirmed_at") VALUES('e1d17c6379b8963d4916d6ebdbf1975ed9ee0cc7', '2010-07-15 20:09:40', '2010-07-15 20:09:40', NULL, '2010-07-15 20:09:40', NULL, 0, 'QSsp-OB6_CKygCWaJvZE', NULL, NULL, NULL, 'aZoSFKUNXhNDNAGKwvQn', NULL, NULL, 'joe_unconfirmed@example.com', NULL)[0m
+Sent mail to joe_unconfirmed@example.com
+
+Date: Thu, 15 Jul 2010 13:09:40 -0700
+From: please-change-me@config-initializers-devise.com
+To: joe_unconfirmed@example.com
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<p>Welcome joe_unconfirmed@example.com!</p>
+
+<p>You can confirm your account through the link below:</p>
+
+<p><a href="http://test.host/users/confirmation?confirmation_token=aZoSFKUNXhNDNAGKwvQn">Confirm my account</a></p>
+REQUESTING PAGE: GET /users/sign_out with {} and HTTP headers {}
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-07-15 13:11:21) [GET]
+Redirected to http://www.example.com/
+Completed in 11ms (DB: 0) | 302 Found [http://www.example.com/users/sign_out]
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/users/sign_out"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 13:11:21) [GET]
+  [4;36;1mBeer Load (0.6ms)[0m   [0;1mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 15ms (View: 6, DB: 1) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /users/sign_up with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-07-15 13:11:22) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (3.4ms)
+Completed in 30ms (View: 19, DB: 0) | 200 OK [http://www.example.com/users/sign_up]
+REQUESTING PAGE: POST /users with {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}} and HTTP headers {"HTTP_REFERER"=>"/users/sign_up"}
+
+
+Processing RegistrationsController#create (for 127.0.0.1 at 2010-07-15 13:11:22) [POST]
+  Parameters: {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'joe_unconfirmed@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.7ms)[0m   [0;1mINSERT INTO "users" ("encrypted_password", "created_at", "confirmation_sent_at", "last_sign_in_ip", "updated_at", "last_sign_in_at", "sign_in_count", "password_salt", "reset_password_token", "remember_token", "current_sign_in_ip", "confirmation_token", "remember_created_at", "current_sign_in_at", "email", "confirmed_at") VALUES('47b1edd68521bf86012c43d1c6fb39eff6b96d98', '2010-07-15 20:11:22', '2010-07-15 20:11:22', NULL, '2010-07-15 20:11:22', NULL, 0, 'NeKauxWLjf0YHJ_dxdbD', NULL, NULL, NULL, 'EX6wnmspTyey1KuZVkw-', NULL, NULL, 'joe_unconfirmed@example.com', NULL)[0m
+Sent mail to joe_unconfirmed@example.com
+
+Date: Thu, 15 Jul 2010 13:11:22 -0700
+From: please-change-me@config-initializers-devise.com
+To: joe_unconfirmed@example.com
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<p>Welcome joe_unconfirmed@example.com!</p>
+
+<p>You can confirm your account through the link below:</p>
+
+<p><a href="http://test.host/users/confirmation?confirmation_token=EX6wnmspTyey1KuZVkw-">Confirm my account</a></p>
+REQUESTING PAGE: GET /users/sign_out with {} and HTTP headers {}
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-07-15 13:16:52) [GET]
+Redirected to http://www.example.com/
+Completed in 10ms (DB: 0) | 302 Found [http://www.example.com/users/sign_out]
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/users/sign_out"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 13:16:52) [GET]
+  [4;36;1mBeer Load (0.7ms)[0m   [0;1mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 15ms (View: 7, DB: 1) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /users/sign_up with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-07-15 13:16:52) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (3.1ms)
+Completed in 28ms (View: 17, DB: 0) | 200 OK [http://www.example.com/users/sign_up]
+REQUESTING PAGE: POST /users with {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}} and HTTP headers {"HTTP_REFERER"=>"/users/sign_up"}
+
+
+Processing RegistrationsController#create (for 127.0.0.1 at 2010-07-15 13:16:52) [POST]
+  Parameters: {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'joe_unconfirmed@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.7ms)[0m   [0;1mINSERT INTO "users" ("encrypted_password", "created_at", "confirmation_sent_at", "last_sign_in_ip", "updated_at", "last_sign_in_at", "sign_in_count", "password_salt", "reset_password_token", "remember_token", "current_sign_in_ip", "confirmation_token", "remember_created_at", "current_sign_in_at", "email", "confirmed_at") VALUES('639ab3de25f0888120f8e54413f065b378345332', '2010-07-15 20:16:52', '2010-07-15 20:16:52', NULL, '2010-07-15 20:16:52', NULL, 0, 'qauSahsH14y9W8y4JGFX', NULL, NULL, NULL, 'cHZFsMadIYnd9Z8hS5UT', NULL, NULL, 'joe_unconfirmed@example.com', NULL)[0m
+Sent mail to joe_unconfirmed@example.com
+
+Date: Thu, 15 Jul 2010 13:16:52 -0700
+From: please-change-me@config-initializers-devise.com
+To: joe_unconfirmed@example.com
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<p>Welcome joe_unconfirmed@example.com!</p>
+
+<p>You can confirm your account through the link below:</p>
+
+<p><a href="http://test.host/users/confirmation?confirmation_token=cHZFsMadIYnd9Z8hS5UT">Confirm my account</a></p>
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-07-15 13:17:35) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (2.5ms)
+Completed in 20ms (View: 13, DB: 0) | 200 OK [http://localhost/users/sign_up]
+
+
+Processing RegistrationsController#create (for 127.0.0.1 at 2010-07-15 13:17:52) [POST]
+  Parameters: {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe24@example.com"}}
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = 'joe24@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.6ms)[0m   [0mINSERT INTO "users" ("encrypted_password", "created_at", "confirmation_sent_at", "last_sign_in_ip", "updated_at", "last_sign_in_at", "sign_in_count", "password_salt", "reset_password_token", "remember_token", "current_sign_in_ip", "confirmation_token", "remember_created_at", "current_sign_in_at", "email", "confirmed_at") VALUES('2e34ece946e9ea186236b1c29a84e4d614ce30cf', '2010-07-15 20:17:52', '2010-07-15 20:17:52', NULL, '2010-07-15 20:17:52', NULL, 0, 'D715KTUStJxwaxMIBAhm', NULL, NULL, NULL, '_BZo52NgcavRiNsnHxIG', NULL, NULL, 'joe24@example.com', NULL)[0m
+Sent mail to joe24@example.com
+
+Date: Thu, 15 Jul 2010 13:17:52 -0700
+From: please-change-me@config-initializers-devise.com
+To: joe24@example.com
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<p>Welcome joe24@example.com!</p>
+
+<p>You can confirm your account through the link below:</p>
+
+<p><a href="http://test.host/users/confirmation?confirmation_token=_BZo52NgcavRiNsnHxIG">Confirm my account</a></p>
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-15 13:17:52) [GET]
+  Parameters: {"unconfirmed"=>"true"}
+Rendering sessions/new
+Rendered shared/_devise_links (1.2ms)
+Completed in 12ms (View: 8, DB: 1) | 200 OK [http://localhost/users/sign_in?unconfirmed=true]
+REQUESTING PAGE: GET /users/sign_out with {} and HTTP headers {}
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-07-15 13:23:06) [GET]
+Redirected to http://www.example.com/
+Completed in 9ms (DB: 0) | 302 Found [http://www.example.com/users/sign_out]
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/users/sign_out"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 13:23:06) [GET]
+  [4;36;1mBeer Load (0.7ms)[0m   [0;1mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 14ms (View: 6, DB: 1) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /users/sign_up with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-07-15 13:23:06) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (3.1ms)
+Completed in 28ms (View: 18, DB: 0) | 200 OK [http://www.example.com/users/sign_up]
+REQUESTING PAGE: POST /users with {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}} and HTTP headers {"HTTP_REFERER"=>"/users/sign_up"}
+
+
+Processing RegistrationsController#create (for 127.0.0.1 at 2010-07-15 13:23:06) [POST]
+  Parameters: {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'joe_unconfirmed@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.7ms)[0m   [0;1mINSERT INTO "users" ("encrypted_password", "created_at", "confirmation_sent_at", "last_sign_in_ip", "updated_at", "last_sign_in_at", "sign_in_count", "password_salt", "reset_password_token", "remember_token", "current_sign_in_ip", "confirmation_token", "remember_created_at", "current_sign_in_at", "email", "confirmed_at") VALUES('130030da045a7c097c5029bfaf2bbedcadd0ff38', '2010-07-15 20:23:06', '2010-07-15 20:23:06', NULL, '2010-07-15 20:23:06', NULL, 0, 'nbMFXupLRboaTraAdh5t', NULL, NULL, NULL, 'T5RxM0HElOhz2m4JaKzS', NULL, NULL, 'joe_unconfirmed@example.com', NULL)[0m
+Sent mail to joe_unconfirmed@example.com
+
+Date: Thu, 15 Jul 2010 13:23:06 -0700
+From: please-change-me@config-initializers-devise.com
+To: joe_unconfirmed@example.com
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<p>Welcome joe_unconfirmed@example.com!</p>
+
+<p>You can confirm your account through the link below:</p>
+
+<p><a href="http://test.host/users/confirmation?confirmation_token=T5RxM0HElOhz2m4JaKzS">Confirm my account</a></p>
+REQUESTING PAGE: GET /users/sign_out with {} and HTTP headers {}
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-07-15 13:23:06) [GET]
+Redirected to http://www.example.com/
+Completed in 2ms (DB: 1) | 302 Found [http://www.example.com/users/sign_out]
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/users/sign_out"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 13:23:06) [GET]
+  [4;35;1mBeer Load (0.3ms)[0m   [0mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-15 13:23:07) [GET]
+Rendering sessions/new
+Rendered shared/_devise_links (1.9ms)
+Completed in 15ms (View: 13, DB: 0) | 200 OK [http://www.example.com/users/sign_in]
+REQUESTING PAGE: POST /users/sign_in with {"commit"=>"Sign in", "user"=>{"remember_me"=>"0", "password"=>"password", "email"=>"joe3@example.com"}} and HTTP headers {"HTTP_REFERER"=>"/users/sign_in"}
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-07-15 13:23:07) [POST]
+  Parameters: {"commit"=>"Sign in", "user"=>{"remember_me"=>"0", "password"=>"password", "email"=>"joe3@example.com"}}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" = 'joe3@example.com') LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: remember_me
+Rendering sessions/new
+Rendered shared/_devise_links (1.9ms)
+Completed in 24ms (View: 10, DB: 0) | 200 OK [http://www.example.com/users/sign_in]
+REQUESTING PAGE: GET /users/sign_out with {} and HTTP headers {}
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-07-15 13:32:23) [GET]
+Redirected to http://www.example.com/
+Completed in 10ms (DB: 0) | 302 Found [http://www.example.com/users/sign_out]
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/users/sign_out"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 13:32:23) [GET]
+  [4;36;1mBeer Load (0.6ms)[0m   [0;1mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 13ms (View: 6, DB: 1) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /users/sign_out with {} and HTTP headers {}
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-07-15 13:45:15) [GET]
+Redirected to http://www.example.com/
+Completed in 10ms (DB: 0) | 302 Found [http://www.example.com/users/sign_out]
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/users/sign_out"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 13:45:15) [GET]
+  [4;36;1mBeer Load (0.6ms)[0m   [0;1mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 14ms (View: 7, DB: 1) | 200 OK [http://www.example.com/]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'joe3@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.9ms)[0m   [0;1mINSERT INTO "users" ("encrypted_password", "created_at", "confirmation_sent_at", "last_sign_in_ip", "updated_at", "last_sign_in_at", "sign_in_count", "password_salt", "reset_password_token", "remember_token", "current_sign_in_ip", "confirmation_token", "remember_created_at", "current_sign_in_at", "email", "confirmed_at") VALUES('cbbb096fe61e571839d99f3a6f38b88551915989', '2010-07-15 20:45:15', '2010-07-15 20:45:15', NULL, '2010-07-15 20:45:15', NULL, 0, 'Zh3YxisT2CEYI00afW9O', NULL, NULL, NULL, 'HWljNWUlRXEiVJbcUrGZ', NULL, NULL, 'joe3@example.com', NULL)[0m
+Sent mail to joe3@example.com
+
+Date: Thu, 15 Jul 2010 13:45:15 -0700
+From: please-change-me@config-initializers-devise.com
+To: joe3@example.com
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<p>Welcome joe3@example.com!</p>
+
+<p>You can confirm your account through the link below:</p>
+
+<p><a href="http://test.host/users/confirmation?confirmation_token=HWljNWUlRXEiVJbcUrGZ">Confirm my account</a></p>
+  [4;35;1mUser Update (0.5ms)[0m   [0mUPDATE "users" SET "updated_at" = '2010-07-15 20:45:15', "confirmed_at" = '2010-07-15 20:45:15', "confirmation_token" = NULL WHERE "id" = 2[0m
+REQUESTING PAGE: GET /users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-15 13:45:15) [GET]
+Rendering sessions/new
+Rendered shared/_devise_links (3.5ms)
+Completed in 16ms (View: 14, DB: 2) | 200 OK [http://www.example.com/users/sign_in]
+REQUESTING PAGE: POST /users/sign_in with {"commit"=>"Sign in", "user"=>{"remember_me"=>"0", "password"=>"password", "email"=>"joe3@example.com"}} and HTTP headers {"HTTP_REFERER"=>"/users/sign_in"}
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-07-15 13:45:15) [POST]
+  Parameters: {"commit"=>"Sign in", "user"=>{"remember_me"=>"0", "password"=>"password", "email"=>"joe3@example.com"}}
+  [4;36;1mUser Load (1.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" = 'joe3@example.com') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "updated_at" = '2010-07-15 20:45:15', "sign_in_count" = 1, "current_sign_in_at" = '2010-07-15 20:45:15', "current_sign_in_ip" = '127.0.0.1', "last_sign_in_at" = '2010-07-15 20:45:15', "last_sign_in_ip" = '127.0.0.1' WHERE "id" = 2[0m
+Redirected to http://www.example.com/users
+Completed in 23ms (DB: 2) | 302 Found [http://www.example.com/users/sign_in]
+REQUESTING PAGE: GET http://www.example.com/users with {} and HTTP headers {"HTTP_REFERER"=>"/users/sign_in"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 13:45:15) [GET]
+  [4;36;1mBeer Load (0.3ms)[0m   [0;1mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://www.example.com/users]
+REQUESTING PAGE: GET /users/sign_out with {} and HTTP headers {}
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-07-15 13:45:28) [GET]
+Redirected to http://www.example.com/
+Completed in 9ms (DB: 0) | 302 Found [http://www.example.com/users/sign_out]
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/users/sign_out"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 13:45:29) [GET]
+  [4;36;1mBeer Load (0.7ms)[0m   [0;1mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 14ms (View: 7, DB: 1) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /users/sign_up with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-07-15 13:45:29) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (3.0ms)
+Completed in 28ms (View: 17, DB: 0) | 200 OK [http://www.example.com/users/sign_up]
+REQUESTING PAGE: POST /users with {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}} and HTTP headers {"HTTP_REFERER"=>"/users/sign_up"}
+
+
+Processing RegistrationsController#create (for 127.0.0.1 at 2010-07-15 13:45:29) [POST]
+  Parameters: {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'joe_unconfirmed@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.8ms)[0m   [0;1mINSERT INTO "users" ("encrypted_password", "created_at", "confirmation_sent_at", "last_sign_in_ip", "updated_at", "last_sign_in_at", "sign_in_count", "password_salt", "reset_password_token", "remember_token", "current_sign_in_ip", "confirmation_token", "remember_created_at", "current_sign_in_at", "email", "confirmed_at") VALUES('e3513e54411ecc2d88d4795f1efeeb7cf43c4b15', '2010-07-15 20:45:29', '2010-07-15 20:45:29', NULL, '2010-07-15 20:45:29', NULL, 0, '4mXB_HEA_KvQOPI3hFBt', NULL, NULL, NULL, 'huGAByYkzkcQLPcHWbVZ', NULL, NULL, 'joe_unconfirmed@example.com', NULL)[0m
+Sent mail to joe_unconfirmed@example.com
+
+Date: Thu, 15 Jul 2010 13:45:29 -0700
+From: please-change-me@config-initializers-devise.com
+To: joe_unconfirmed@example.com
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<p>Welcome joe_unconfirmed@example.com!</p>
+
+<p>You can confirm your account through the link below:</p>
+
+<p><a href="http://test.host/users/confirmation?confirmation_token=huGAByYkzkcQLPcHWbVZ">Confirm my account</a></p>
+REQUESTING PAGE: GET /users/sign_out with {} and HTTP headers {}
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-07-15 13:45:29) [GET]
+Redirected to http://www.example.com/
+Completed in 2ms (DB: 1) | 302 Found [http://www.example.com/users/sign_out]
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/users/sign_out"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 13:45:29) [GET]
+  [4;35;1mBeer Load (0.5ms)[0m   [0mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://www.example.com/]
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = 'joe3@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.6ms)[0m   [0mINSERT INTO "users" ("encrypted_password", "created_at", "confirmation_sent_at", "last_sign_in_ip", "updated_at", "last_sign_in_at", "sign_in_count", "password_salt", "reset_password_token", "remember_token", "current_sign_in_ip", "confirmation_token", "remember_created_at", "current_sign_in_at", "email", "confirmed_at") VALUES('4d14e707c10ba4df1910bc97b85381f8a30f8be5', '2010-07-15 20:45:29', '2010-07-15 20:45:29', NULL, '2010-07-15 20:45:29', NULL, 0, 'j5BhnJ1AjvvrwudS9eGh', NULL, NULL, NULL, 'IetuiqkpBWZ2F-q9FgQy', NULL, NULL, 'joe3@example.com', NULL)[0m
+Sent mail to joe3@example.com
+
+Date: Thu, 15 Jul 2010 13:45:29 -0700
+From: please-change-me@config-initializers-devise.com
+To: joe3@example.com
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<p>Welcome joe3@example.com!</p>
+
+<p>You can confirm your account through the link below:</p>
+
+<p><a href="http://test.host/users/confirmation?confirmation_token=IetuiqkpBWZ2F-q9FgQy">Confirm my account</a></p>
+  [4;36;1mUser Update (0.5ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2010-07-15 20:45:29', "confirmed_at" = '2010-07-15 20:45:29', "confirmation_token" = NULL WHERE "id" = 2[0m
+REQUESTING PAGE: GET /users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-15 13:45:29) [GET]
+Rendering sessions/new
+Rendered shared/_devise_links (1.7ms)
+Completed in 15ms (View: 13, DB: 2) | 200 OK [http://www.example.com/users/sign_in]
+REQUESTING PAGE: POST /users/sign_in with {"commit"=>"Sign in", "user"=>{"remember_me"=>"0", "password"=>"password", "email"=>"joe3@example.com"}} and HTTP headers {"HTTP_REFERER"=>"/users/sign_in"}
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-07-15 13:45:29) [POST]
+  Parameters: {"commit"=>"Sign in", "user"=>{"remember_me"=>"0", "password"=>"password", "email"=>"joe3@example.com"}}
+  [4;35;1mUser Load (1.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'joe3@example.com') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2010-07-15 20:45:29', "sign_in_count" = 1, "current_sign_in_at" = '2010-07-15 20:45:29', "current_sign_in_ip" = '127.0.0.1', "last_sign_in_at" = '2010-07-15 20:45:29', "last_sign_in_ip" = '127.0.0.1' WHERE "id" = 2[0m
+Redirected to http://www.example.com/users
+Completed in 24ms (DB: 2) | 302 Found [http://www.example.com/users/sign_in]
+REQUESTING PAGE: GET http://www.example.com/users with {} and HTTP headers {"HTTP_REFERER"=>"/users/sign_in"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 13:45:29) [GET]
+  [4;35;1mBeer Load (0.2ms)[0m   [0mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://www.example.com/users]
+REQUESTING PAGE: GET /users/sign_out with {} and HTTP headers {}
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-07-15 13:46:01) [GET]
+Redirected to http://www.example.com/
+Completed in 9ms (DB: 0) | 302 Found [http://www.example.com/users/sign_out]
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/users/sign_out"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 13:46:01) [GET]
+  [4;36;1mBeer Load (0.6ms)[0m   [0;1mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 15ms (View: 7, DB: 1) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /users/sign_up with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-07-15 13:46:01) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (3.0ms)
+Completed in 29ms (View: 17, DB: 0) | 200 OK [http://www.example.com/users/sign_up]
+REQUESTING PAGE: POST /users with {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}} and HTTP headers {"HTTP_REFERER"=>"/users/sign_up"}
+
+
+Processing RegistrationsController#create (for 127.0.0.1 at 2010-07-15 13:46:01) [POST]
+  Parameters: {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'joe_unconfirmed@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.6ms)[0m   [0;1mINSERT INTO "users" ("encrypted_password", "created_at", "confirmation_sent_at", "last_sign_in_ip", "updated_at", "last_sign_in_at", "sign_in_count", "password_salt", "reset_password_token", "remember_token", "current_sign_in_ip", "confirmation_token", "remember_created_at", "current_sign_in_at", "email", "confirmed_at") VALUES('53f66580520581673f6225e614a9b6c00cd1bf86', '2010-07-15 20:46:01', '2010-07-15 20:46:01', NULL, '2010-07-15 20:46:01', NULL, 0, 'ea-S4epO6NTx3PSUiaFc', NULL, NULL, NULL, 'wUomfsiFvwVBiSwfuws0', NULL, NULL, 'joe_unconfirmed@example.com', NULL)[0m
+Sent mail to joe_unconfirmed@example.com
+
+Date: Thu, 15 Jul 2010 13:46:01 -0700
+From: please-change-me@config-initializers-devise.com
+To: joe_unconfirmed@example.com
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<p>Welcome joe_unconfirmed@example.com!</p>
+
+<p>You can confirm your account through the link below:</p>
+
+<p><a href="http://test.host/users/confirmation?confirmation_token=wUomfsiFvwVBiSwfuws0">Confirm my account</a></p>
+REQUESTING PAGE: GET /users/sign_out with {} and HTTP headers {}
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-07-15 13:46:01) [GET]
+Redirected to http://www.example.com/
+Completed in 4ms (DB: 1) | 302 Found [http://www.example.com/users/sign_out]
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/users/sign_out"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 13:46:01) [GET]
+  [4;35;1mBeer Load (1.5ms)[0m   [0mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 13ms (View: 7, DB: 2) | 200 OK [http://www.example.com/]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = 'joe3@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.5ms)[0m   [0mINSERT INTO "users" ("encrypted_password", "created_at", "confirmation_sent_at", "last_sign_in_ip", "updated_at", "last_sign_in_at", "sign_in_count", "password_salt", "reset_password_token", "remember_token", "current_sign_in_ip", "confirmation_token", "remember_created_at", "current_sign_in_at", "email", "confirmed_at") VALUES('131f52b346994b3e1a934be4d62a83a714647d87', '2010-07-15 20:46:01', '2010-07-15 20:46:01', NULL, '2010-07-15 20:46:01', NULL, 0, 's1jtLXy_1AdNtJFuXHek', NULL, NULL, NULL, '7O9Td-uphWxvdYW00yVl', NULL, NULL, 'joe3@example.com', NULL)[0m
+Sent mail to joe3@example.com
+
+Date: Thu, 15 Jul 2010 13:46:01 -0700
+From: please-change-me@config-initializers-devise.com
+To: joe3@example.com
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<p>Welcome joe3@example.com!</p>
+
+<p>You can confirm your account through the link below:</p>
+
+<p><a href="http://test.host/users/confirmation?confirmation_token=7O9Td-uphWxvdYW00yVl">Confirm my account</a></p>
+  [4;36;1mUser Update (0.5ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2010-07-15 20:46:01', "confirmed_at" = '2010-07-15 20:46:01', "confirmation_token" = NULL WHERE "id" = 2[0m
+REQUESTING PAGE: GET /users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-15 13:46:01) [GET]
+Rendering sessions/new
+Rendered shared/_devise_links (2.0ms)
+Completed in 16ms (View: 14, DB: 1) | 200 OK [http://www.example.com/users/sign_in]
+REQUESTING PAGE: POST /users/sign_in with {"commit"=>"Sign in", "user"=>{"remember_me"=>"0", "password"=>"password", "email"=>"joe3@example.com"}} and HTTP headers {"HTTP_REFERER"=>"/users/sign_in"}
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-07-15 13:46:01) [POST]
+  Parameters: {"commit"=>"Sign in", "user"=>{"remember_me"=>"0", "password"=>"password", "email"=>"joe3@example.com"}}
+  [4;35;1mUser Load (0.9ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'joe3@example.com') LIMIT 1[0m
+  [4;36;1mUser Update (0.5ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2010-07-15 20:46:01', "sign_in_count" = 1, "current_sign_in_at" = '2010-07-15 20:46:01', "current_sign_in_ip" = '127.0.0.1', "last_sign_in_at" = '2010-07-15 20:46:01', "last_sign_in_ip" = '127.0.0.1' WHERE "id" = 2[0m
+Redirected to http://www.example.com/users
+Completed in 21ms (DB: 1) | 302 Found [http://www.example.com/users/sign_in]
+REQUESTING PAGE: GET http://www.example.com/users with {} and HTTP headers {"HTTP_REFERER"=>"/users/sign_in"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 13:46:01) [GET]
+  [4;35;1mBeer Load (0.3ms)[0m   [0mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://www.example.com/users]
+REQUESTING PAGE: GET /users/sign_out with {} and HTTP headers {}
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-07-15 13:46:13) [GET]
+Redirected to http://www.example.com/
+Completed in 9ms (DB: 0) | 302 Found [http://www.example.com/users/sign_out]
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/users/sign_out"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 13:46:13) [GET]
+  [4;36;1mBeer Load (0.6ms)[0m   [0;1mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 14ms (View: 6, DB: 1) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /users/sign_up with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-07-15 13:46:13) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (3.1ms)
+Completed in 30ms (View: 17, DB: 0) | 200 OK [http://www.example.com/users/sign_up]
+REQUESTING PAGE: POST /users with {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}} and HTTP headers {"HTTP_REFERER"=>"/users/sign_up"}
+
+
+Processing RegistrationsController#create (for 127.0.0.1 at 2010-07-15 13:46:13) [POST]
+  Parameters: {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'joe_unconfirmed@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.6ms)[0m   [0;1mINSERT INTO "users" ("encrypted_password", "created_at", "confirmation_sent_at", "last_sign_in_ip", "updated_at", "last_sign_in_at", "sign_in_count", "password_salt", "reset_password_token", "remember_token", "current_sign_in_ip", "confirmation_token", "remember_created_at", "current_sign_in_at", "email", "confirmed_at") VALUES('9db6f81ab5b21716e715f2efe0c7023bd6d3b33b', '2010-07-15 20:46:13', '2010-07-15 20:46:13', NULL, '2010-07-15 20:46:13', NULL, 0, '0hqqmZEnKQFrHP0YqrUY', NULL, NULL, NULL, 'CsaecTfvmW0ZvUgT8soE', NULL, NULL, 'joe_unconfirmed@example.com', NULL)[0m
+Sent mail to joe_unconfirmed@example.com
+
+Date: Thu, 15 Jul 2010 13:46:13 -0700
+From: please-change-me@config-initializers-devise.com
+To: joe_unconfirmed@example.com
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<p>Welcome joe_unconfirmed@example.com!</p>
+
+<p>You can confirm your account through the link below:</p>
+
+<p><a href="http://test.host/users/confirmation?confirmation_token=CsaecTfvmW0ZvUgT8soE">Confirm my account</a></p>
+REQUESTING PAGE: GET /users/sign_out with {} and HTTP headers {}
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-07-15 13:46:13) [GET]
+Redirected to http://www.example.com/
+Completed in 2ms (DB: 1) | 302 Found [http://www.example.com/users/sign_out]
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/users/sign_out"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 13:46:13) [GET]
+  [4;35;1mBeer Load (0.4ms)[0m   [0mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://www.example.com/]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = 'joe3@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.5ms)[0m   [0mINSERT INTO "users" ("encrypted_password", "created_at", "confirmation_sent_at", "last_sign_in_ip", "updated_at", "last_sign_in_at", "sign_in_count", "password_salt", "reset_password_token", "remember_token", "current_sign_in_ip", "confirmation_token", "remember_created_at", "current_sign_in_at", "email", "confirmed_at") VALUES('d7878071c0c81f17eab857f552e0e234ef8664ec', '2010-07-15 20:46:13', '2010-07-15 20:46:13', NULL, '2010-07-15 20:46:13', NULL, 0, 'ERu4S1nSrMNmAu1SVxw8', NULL, NULL, NULL, 'Zt4scQzAHT3piwL12Nnv', NULL, NULL, 'joe3@example.com', NULL)[0m
+Sent mail to joe3@example.com
+
+Date: Thu, 15 Jul 2010 13:46:13 -0700
+From: please-change-me@config-initializers-devise.com
+To: joe3@example.com
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<p>Welcome joe3@example.com!</p>
+
+<p>You can confirm your account through the link below:</p>
+
+<p><a href="http://test.host/users/confirmation?confirmation_token=Zt4scQzAHT3piwL12Nnv">Confirm my account</a></p>
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2010-07-15 20:46:13', "confirmed_at" = '2010-07-15 20:46:13', "confirmation_token" = NULL WHERE "id" = 2[0m
+REQUESTING PAGE: GET /users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-15 13:46:13) [GET]
+Rendering sessions/new
+Rendered shared/_devise_links (2.0ms)
+Completed in 17ms (View: 15, DB: 1) | 200 OK [http://www.example.com/users/sign_in]
+REQUESTING PAGE: POST /users/sign_in with {"commit"=>"Sign in", "user"=>{"remember_me"=>"0", "password"=>"password", "email"=>"joe3@example.com"}} and HTTP headers {"HTTP_REFERER"=>"/users/sign_in"}
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-07-15 13:46:13) [POST]
+  Parameters: {"commit"=>"Sign in", "user"=>{"remember_me"=>"0", "password"=>"password", "email"=>"joe3@example.com"}}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'joe3@example.com') LIMIT 1[0m
+  [4;36;1mUser Update (0.5ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2010-07-15 20:46:13', "sign_in_count" = 1, "current_sign_in_at" = '2010-07-15 20:46:13', "current_sign_in_ip" = '127.0.0.1', "last_sign_in_at" = '2010-07-15 20:46:13', "last_sign_in_ip" = '127.0.0.1' WHERE "id" = 2[0m
+Redirected to http://www.example.com/users
+Completed in 20ms (DB: 2) | 302 Found [http://www.example.com/users/sign_in]
+REQUESTING PAGE: GET http://www.example.com/users with {} and HTTP headers {"HTTP_REFERER"=>"/users/sign_in"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 13:46:13) [GET]
+  [4;35;1mBeer Load (0.3ms)[0m   [0mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://www.example.com/users]
+REQUESTING PAGE: GET /users/sign_out with {} and HTTP headers {}
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-07-15 13:46:54) [GET]
+Redirected to http://www.example.com/
+Completed in 9ms (DB: 0) | 302 Found [http://www.example.com/users/sign_out]
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/users/sign_out"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 13:46:54) [GET]
+  [4;36;1mBeer Load (1.0ms)[0m   [0;1mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 16ms (View: 6, DB: 1) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /users/sign_up with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-07-15 13:46:54) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (3.7ms)
+Completed in 30ms (View: 19, DB: 0) | 200 OK [http://www.example.com/users/sign_up]
+REQUESTING PAGE: POST /users with {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}} and HTTP headers {"HTTP_REFERER"=>"/users/sign_up"}
+
+
+Processing RegistrationsController#create (for 127.0.0.1 at 2010-07-15 13:46:54) [POST]
+  Parameters: {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'joe_unconfirmed@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.7ms)[0m   [0;1mINSERT INTO "users" ("encrypted_password", "created_at", "confirmation_sent_at", "last_sign_in_ip", "updated_at", "last_sign_in_at", "sign_in_count", "password_salt", "reset_password_token", "remember_token", "current_sign_in_ip", "confirmation_token", "remember_created_at", "current_sign_in_at", "email", "confirmed_at") VALUES('f41d2bda29f806604d13b453d711b107829cd0b0', '2010-07-15 20:46:54', '2010-07-15 20:46:54', NULL, '2010-07-15 20:46:54', NULL, 0, 'aNutH55S0Ou3vxRVcv5V', NULL, NULL, NULL, 'u2QGh8RWH4Ij_3KQ5FzD', NULL, NULL, 'joe_unconfirmed@example.com', NULL)[0m
+Sent mail to joe_unconfirmed@example.com
+
+Date: Thu, 15 Jul 2010 13:46:54 -0700
+From: please-change-me@config-initializers-devise.com
+To: joe_unconfirmed@example.com
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<p>Welcome joe_unconfirmed@example.com!</p>
+
+<p>You can confirm your account through the link below:</p>
+
+<p><a href="http://test.host/users/confirmation?confirmation_token=u2QGh8RWH4Ij_3KQ5FzD">Confirm my account</a></p>
+REQUESTING PAGE: GET /users/sign_out with {} and HTTP headers {}
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-07-15 13:46:54) [GET]
+Redirected to http://www.example.com/
+Completed in 2ms (DB: 1) | 302 Found [http://www.example.com/users/sign_out]
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/users/sign_out"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 13:46:54) [GET]
+  [4;35;1mBeer Load (0.3ms)[0m   [0mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://www.example.com/]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = 'joe3@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.8ms)[0m   [0mINSERT INTO "users" ("encrypted_password", "created_at", "confirmation_sent_at", "last_sign_in_ip", "updated_at", "last_sign_in_at", "sign_in_count", "password_salt", "reset_password_token", "remember_token", "current_sign_in_ip", "confirmation_token", "remember_created_at", "current_sign_in_at", "email", "confirmed_at") VALUES('afc9d53882164dfc35f9061c4720c125d6e3ae7b', '2010-07-15 20:46:54', '2010-07-15 20:46:54', NULL, '2010-07-15 20:46:54', NULL, 0, 'SLAEyGCXsD5n5PMHbN4O', NULL, NULL, NULL, 'JBKhhd3PmQ0YrTikVvZR', NULL, NULL, 'joe3@example.com', NULL)[0m
+Sent mail to joe3@example.com
+
+Date: Thu, 15 Jul 2010 13:46:54 -0700
+From: please-change-me@config-initializers-devise.com
+To: joe3@example.com
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<p>Welcome joe3@example.com!</p>
+
+<p>You can confirm your account through the link below:</p>
+
+<p><a href="http://test.host/users/confirmation?confirmation_token=JBKhhd3PmQ0YrTikVvZR">Confirm my account</a></p>
+  [4;36;1mUser Update (0.9ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2010-07-15 20:46:55', "confirmed_at" = '2010-07-15 20:46:55', "confirmation_token" = NULL WHERE "id" = 2[0m
+REQUESTING PAGE: GET /users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-15 13:46:55) [GET]
+Rendering sessions/new
+Rendered shared/_devise_links (2.0ms)
+Completed in 15ms (View: 13, DB: 2) | 200 OK [http://www.example.com/users/sign_in]
+REQUESTING PAGE: POST /users/sign_in with {"commit"=>"Sign in", "user"=>{"remember_me"=>"0", "password"=>"password", "email"=>"joe3@example.com"}} and HTTP headers {"HTTP_REFERER"=>"/users/sign_in"}
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-07-15 13:46:55) [POST]
+  Parameters: {"commit"=>"Sign in", "user"=>{"remember_me"=>"0", "password"=>"password", "email"=>"joe3@example.com"}}
+  [4;35;1mUser Load (0.9ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'joe3@example.com') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2010-07-15 20:46:55', "sign_in_count" = 1, "current_sign_in_at" = '2010-07-15 20:46:55', "current_sign_in_ip" = '127.0.0.1', "last_sign_in_at" = '2010-07-15 20:46:55', "last_sign_in_ip" = '127.0.0.1' WHERE "id" = 2[0m
+Redirected to http://www.example.com/users
+Completed in 22ms (DB: 1) | 302 Found [http://www.example.com/users/sign_in]
+REQUESTING PAGE: GET http://www.example.com/users with {} and HTTP headers {"HTTP_REFERER"=>"/users/sign_in"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 13:46:55) [GET]
+  [4;35;1mBeer Load (0.2ms)[0m   [0mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://www.example.com/users]
+REQUESTING PAGE: GET /users/sign_out with {} and HTTP headers {}
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-07-15 13:48:37) [GET]
+Redirected to http://www.example.com/
+Completed in 10ms (DB: 0) | 302 Found [http://www.example.com/users/sign_out]
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/users/sign_out"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 13:48:37) [GET]
+  [4;36;1mBeer Load (0.6ms)[0m   [0;1mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 14ms (View: 6, DB: 1) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /users/sign_up with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-07-15 13:48:38) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (3.4ms)
+Completed in 31ms (View: 21, DB: 0) | 200 OK [http://www.example.com/users/sign_up]
+REQUESTING PAGE: POST /users with {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}} and HTTP headers {"HTTP_REFERER"=>"/users/sign_up"}
+
+
+Processing RegistrationsController#create (for 127.0.0.1 at 2010-07-15 13:48:38) [POST]
+  Parameters: {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'joe_unconfirmed@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.6ms)[0m   [0;1mINSERT INTO "users" ("encrypted_password", "created_at", "confirmation_sent_at", "last_sign_in_ip", "updated_at", "last_sign_in_at", "sign_in_count", "password_salt", "reset_password_token", "remember_token", "current_sign_in_ip", "confirmation_token", "remember_created_at", "current_sign_in_at", "email", "confirmed_at") VALUES('2175eb633d7eae0e7280b5617dd9bd3c403f9e8e', '2010-07-15 20:48:38', '2010-07-15 20:48:38', NULL, '2010-07-15 20:48:38', NULL, 0, 'O6eVa9awWElj7a5jd9bJ', NULL, NULL, NULL, 'DfWQAvQfDMNEXY9PrABF', NULL, NULL, 'joe_unconfirmed@example.com', NULL)[0m
+Sent mail to joe_unconfirmed@example.com
+
+Date: Thu, 15 Jul 2010 13:48:38 -0700
+From: please-change-me@config-initializers-devise.com
+To: joe_unconfirmed@example.com
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<p>Welcome joe_unconfirmed@example.com!</p>
+
+<p>You can confirm your account through the link below:</p>
+
+<p><a href="http://test.host/users/confirmation?confirmation_token=DfWQAvQfDMNEXY9PrABF">Confirm my account</a></p>
+REQUESTING PAGE: GET /users/sign_out with {} and HTTP headers {}
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-07-15 13:49:02) [GET]
+Redirected to http://www.example.com/
+Completed in 13ms (DB: 0) | 302 Found [http://www.example.com/users/sign_out]
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/users/sign_out"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 13:49:02) [GET]
+  [4;36;1mBeer Load (0.7ms)[0m   [0;1mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 13ms (View: 6, DB: 1) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /users/sign_up with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-07-15 13:49:02) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (3.2ms)
+Completed in 27ms (View: 17, DB: 0) | 200 OK [http://www.example.com/users/sign_up]
+REQUESTING PAGE: POST /users with {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}} and HTTP headers {"HTTP_REFERER"=>"/users/sign_up"}
+
+
+Processing RegistrationsController#create (for 127.0.0.1 at 2010-07-15 13:49:02) [POST]
+  Parameters: {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'joe_unconfirmed@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.7ms)[0m   [0;1mINSERT INTO "users" ("encrypted_password", "created_at", "confirmation_sent_at", "last_sign_in_ip", "updated_at", "last_sign_in_at", "sign_in_count", "password_salt", "reset_password_token", "remember_token", "current_sign_in_ip", "confirmation_token", "remember_created_at", "current_sign_in_at", "email", "confirmed_at") VALUES('2a3633d890f22937e12307cd53685937fd7fe145', '2010-07-15 20:49:02', '2010-07-15 20:49:02', NULL, '2010-07-15 20:49:02', NULL, 0, 'K05IUDvpe18RAtP4Ll7h', NULL, NULL, NULL, 'QzIpOLMu4G-JYavGyjFW', NULL, NULL, 'joe_unconfirmed@example.com', NULL)[0m
+Sent mail to joe_unconfirmed@example.com
+
+Date: Thu, 15 Jul 2010 13:49:02 -0700
+From: please-change-me@config-initializers-devise.com
+To: joe_unconfirmed@example.com
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<p>Welcome joe_unconfirmed@example.com!</p>
+
+<p>You can confirm your account through the link below:</p>
+
+<p><a href="http://test.host/users/confirmation?confirmation_token=QzIpOLMu4G-JYavGyjFW">Confirm my account</a></p>
+REQUESTING PAGE: GET /users/sign_out with {} and HTTP headers {}
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-07-15 13:49:44) [GET]
+Redirected to http://www.example.com/
+Completed in 8ms (DB: 0) | 302 Found [http://www.example.com/users/sign_out]
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/users/sign_out"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 13:49:44) [GET]
+  [4;36;1mBeer Load (0.6ms)[0m   [0;1mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 83ms (View: 76, DB: 1) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /users/sign_up with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-07-15 13:49:44) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (3.1ms)
+Completed in 27ms (View: 16, DB: 0) | 200 OK [http://www.example.com/users/sign_up]
+REQUESTING PAGE: POST /users with {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}} and HTTP headers {"HTTP_REFERER"=>"/users/sign_up"}
+
+
+Processing RegistrationsController#create (for 127.0.0.1 at 2010-07-15 13:49:44) [POST]
+  Parameters: {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'joe_unconfirmed@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.5ms)[0m   [0;1mINSERT INTO "users" ("encrypted_password", "created_at", "confirmation_sent_at", "last_sign_in_ip", "updated_at", "last_sign_in_at", "sign_in_count", "password_salt", "reset_password_token", "remember_token", "current_sign_in_ip", "confirmation_token", "remember_created_at", "current_sign_in_at", "email", "confirmed_at") VALUES('0b0d759cd04035e674c2bdb22d1b42fdd39d0b2c', '2010-07-15 20:49:44', '2010-07-15 20:49:44', NULL, '2010-07-15 20:49:44', NULL, 0, 'ifPnP6r-eEgz5V0W_WZ-', NULL, NULL, NULL, 'ZkrUloqDTG6TrQRweYEx', NULL, NULL, 'joe_unconfirmed@example.com', NULL)[0m
+Sent mail to joe_unconfirmed@example.com
+
+Date: Thu, 15 Jul 2010 13:49:44 -0700
+From: please-change-me@config-initializers-devise.com
+To: joe_unconfirmed@example.com
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<p>Welcome joe_unconfirmed@example.com!</p>
+
+<p>You can confirm your account through the link below:</p>
+
+<p><a href="http://test.host/users/confirmation?confirmation_token=ZkrUloqDTG6TrQRweYEx">Confirm my account</a></p>
+REQUESTING PAGE: GET /users/sign_out with {} and HTTP headers {}
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-07-15 13:50:19) [GET]
+Redirected to http://www.example.com/
+Completed in 10ms (DB: 0) | 302 Found [http://www.example.com/users/sign_out]
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/users/sign_out"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 13:50:19) [GET]
+  [4;36;1mBeer Load (0.6ms)[0m   [0;1mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 13ms (View: 6, DB: 1) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /users/sign_up with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-07-15 13:50:19) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (2.9ms)
+Completed in 25ms (View: 16, DB: 0) | 200 OK [http://www.example.com/users/sign_up]
+REQUESTING PAGE: POST /users with {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}} and HTTP headers {"HTTP_REFERER"=>"/users/sign_up"}
+
+
+Processing RegistrationsController#create (for 127.0.0.1 at 2010-07-15 13:50:19) [POST]
+  Parameters: {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'joe_unconfirmed@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.8ms)[0m   [0;1mINSERT INTO "users" ("encrypted_password", "created_at", "confirmation_sent_at", "last_sign_in_ip", "updated_at", "last_sign_in_at", "sign_in_count", "password_salt", "reset_password_token", "remember_token", "current_sign_in_ip", "confirmation_token", "remember_created_at", "current_sign_in_at", "email", "confirmed_at") VALUES('699b02cbf1c65f47743b18536ca0a36dc86f7c34', '2010-07-15 20:50:19', '2010-07-15 20:50:19', NULL, '2010-07-15 20:50:19', NULL, 0, 'vw-DhPCxHaCVCBTEV5oe', NULL, NULL, NULL, 'xvjqkNIn_U3tcGlXpITZ', NULL, NULL, 'joe_unconfirmed@example.com', NULL)[0m
+Sent mail to joe_unconfirmed@example.com
+
+Date: Thu, 15 Jul 2010 13:50:19 -0700
+From: please-change-me@config-initializers-devise.com
+To: joe_unconfirmed@example.com
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<p>Welcome joe_unconfirmed@example.com!</p>
+
+<p>You can confirm your account through the link below:</p>
+
+<p><a href="http://test.host/users/confirmation?confirmation_token=xvjqkNIn_U3tcGlXpITZ">Confirm my account</a></p>
+REQUESTING PAGE: GET /users/sign_out with {} and HTTP headers {}
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-07-15 13:50:24) [GET]
+Redirected to http://www.example.com/
+Completed in 9ms (DB: 0) | 302 Found [http://www.example.com/users/sign_out]
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/users/sign_out"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 13:50:24) [GET]
+  [4;36;1mBeer Load (0.7ms)[0m   [0;1mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 87ms (View: 80, DB: 1) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /users/sign_up with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-07-15 13:50:24) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (3.0ms)
+Completed in 27ms (View: 16, DB: 0) | 200 OK [http://www.example.com/users/sign_up]
+REQUESTING PAGE: POST /users with {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}} and HTTP headers {"HTTP_REFERER"=>"/users/sign_up"}
+
+
+Processing RegistrationsController#create (for 127.0.0.1 at 2010-07-15 13:50:24) [POST]
+  Parameters: {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'joe_unconfirmed@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.5ms)[0m   [0;1mINSERT INTO "users" ("encrypted_password", "created_at", "confirmation_sent_at", "last_sign_in_ip", "updated_at", "last_sign_in_at", "sign_in_count", "password_salt", "reset_password_token", "remember_token", "current_sign_in_ip", "confirmation_token", "remember_created_at", "current_sign_in_at", "email", "confirmed_at") VALUES('aa2a36967a9e3d49f6d89a251a5024bfe6030420', '2010-07-15 20:50:24', '2010-07-15 20:50:24', NULL, '2010-07-15 20:50:24', NULL, 0, 'p0_RjV5KFSNKCjpRh7UI', NULL, NULL, NULL, 'A8rycL-KbdrsWgwrrKyW', NULL, NULL, 'joe_unconfirmed@example.com', NULL)[0m
+Sent mail to joe_unconfirmed@example.com
+
+Date: Thu, 15 Jul 2010 13:50:24 -0700
+From: please-change-me@config-initializers-devise.com
+To: joe_unconfirmed@example.com
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<p>Welcome joe_unconfirmed@example.com!</p>
+
+<p>You can confirm your account through the link below:</p>
+
+<p><a href="http://test.host/users/confirmation?confirmation_token=A8rycL-KbdrsWgwrrKyW">Confirm my account</a></p>
+REQUESTING PAGE: GET /users/sign_out with {} and HTTP headers {}
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-07-15 13:51:12) [GET]
+Redirected to http://www.example.com/
+Completed in 8ms (DB: 0) | 302 Found [http://www.example.com/users/sign_out]
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/users/sign_out"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 13:51:12) [GET]
+  [4;36;1mBeer Load (0.5ms)[0m   [0;1mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 83ms (View: 76, DB: 1) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /users/sign_up with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-07-15 13:51:12) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (3.4ms)
+Completed in 30ms (View: 19, DB: 0) | 200 OK [http://www.example.com/users/sign_up]
+REQUESTING PAGE: POST /users with {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}} and HTTP headers {"HTTP_REFERER"=>"/users/sign_up"}
+
+
+Processing RegistrationsController#create (for 127.0.0.1 at 2010-07-15 13:51:12) [POST]
+  Parameters: {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'joe_unconfirmed@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.5ms)[0m   [0;1mINSERT INTO "users" ("encrypted_password", "created_at", "confirmation_sent_at", "last_sign_in_ip", "updated_at", "last_sign_in_at", "sign_in_count", "password_salt", "reset_password_token", "remember_token", "current_sign_in_ip", "confirmation_token", "remember_created_at", "current_sign_in_at", "email", "confirmed_at") VALUES('98f34d6532b848783bd7120b45766b7a93130477', '2010-07-15 20:51:12', '2010-07-15 20:51:12', NULL, '2010-07-15 20:51:12', NULL, 0, 'AZVwOJV71cLKyHtSHi9E', NULL, NULL, NULL, 'QGozQLSxc8zp64-qblgC', NULL, NULL, 'joe_unconfirmed@example.com', NULL)[0m
+Sent mail to joe_unconfirmed@example.com
+
+Date: Thu, 15 Jul 2010 13:51:12 -0700
+From: please-change-me@config-initializers-devise.com
+To: joe_unconfirmed@example.com
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<p>Welcome joe_unconfirmed@example.com!</p>
+
+<p>You can confirm your account through the link below:</p>
+
+<p><a href="http://test.host/users/confirmation?confirmation_token=QGozQLSxc8zp64-qblgC">Confirm my account</a></p>
+REQUESTING PAGE: GET /users/sign_out with {} and HTTP headers {}
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-07-15 13:52:39) [GET]
+Redirected to http://www.example.com/
+Completed in 9ms (DB: 0) | 302 Found [http://www.example.com/users/sign_out]
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/users/sign_out"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 13:52:39) [GET]
+  [4;36;1mBeer Load (0.6ms)[0m   [0;1mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 13ms (View: 6, DB: 1) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /users/sign_up with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-07-15 13:52:39) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (3.7ms)
+Completed in 28ms (View: 19, DB: 0) | 200 OK [http://www.example.com/users/sign_up]
+REQUESTING PAGE: POST /users with {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}} and HTTP headers {"HTTP_REFERER"=>"/users/sign_up"}
+
+
+Processing RegistrationsController#create (for 127.0.0.1 at 2010-07-15 13:52:39) [POST]
+  Parameters: {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'joe_unconfirmed@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.8ms)[0m   [0;1mINSERT INTO "users" ("encrypted_password", "created_at", "confirmation_sent_at", "last_sign_in_ip", "updated_at", "last_sign_in_at", "sign_in_count", "password_salt", "reset_password_token", "remember_token", "current_sign_in_ip", "confirmation_token", "remember_created_at", "current_sign_in_at", "email", "confirmed_at") VALUES('1de89062dbd8372c0a1db769a30d49a47a102bfe', '2010-07-15 20:52:39', '2010-07-15 20:52:39', NULL, '2010-07-15 20:52:39', NULL, 0, '8K0rW2mz8C7fJ9_lV-fr', NULL, NULL, NULL, '0uVHgWdSf30d6vxTMrpu', NULL, NULL, 'joe_unconfirmed@example.com', NULL)[0m
+Sent mail to joe_unconfirmed@example.com
+
+Date: Thu, 15 Jul 2010 13:52:39 -0700
+From: please-change-me@config-initializers-devise.com
+To: joe_unconfirmed@example.com
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<p>Welcome joe_unconfirmed@example.com!</p>
+
+<p>You can confirm your account through the link below:</p>
+
+<p><a href="http://test.host/users/confirmation?confirmation_token=0uVHgWdSf30d6vxTMrpu">Confirm my account</a></p>
+REQUESTING PAGE: GET /users/sign_out with {} and HTTP headers {}
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-07-15 13:54:17) [GET]
+Redirected to http://www.example.com/
+Completed in 10ms (DB: 0) | 302 Found [http://www.example.com/users/sign_out]
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/users/sign_out"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 13:54:17) [GET]
+  [4;36;1mBeer Load (0.6ms)[0m   [0;1mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 13ms (View: 6, DB: 1) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /users/sign_up with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-07-15 13:54:17) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (3.7ms)
+Completed in 27ms (View: 18, DB: 0) | 200 OK [http://www.example.com/users/sign_up]
+REQUESTING PAGE: POST /users with {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}} and HTTP headers {"HTTP_REFERER"=>"/users/sign_up"}
+
+
+Processing RegistrationsController#create (for 127.0.0.1 at 2010-07-15 13:54:17) [POST]
+  Parameters: {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'joe_unconfirmed@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.6ms)[0m   [0;1mINSERT INTO "users" ("encrypted_password", "created_at", "confirmation_sent_at", "last_sign_in_ip", "updated_at", "last_sign_in_at", "sign_in_count", "password_salt", "reset_password_token", "remember_token", "current_sign_in_ip", "confirmation_token", "remember_created_at", "current_sign_in_at", "email", "confirmed_at") VALUES('579da92d2d499c7d6c0e22f03d13949ab69e0b11', '2010-07-15 20:54:17', '2010-07-15 20:54:17', NULL, '2010-07-15 20:54:17', NULL, 0, 'CSSyD2PyZyh6EDt0EfFx', NULL, NULL, NULL, 'tLQE8R4VA-A8a_z3nxve', NULL, NULL, 'joe_unconfirmed@example.com', NULL)[0m
+Sent mail to joe_unconfirmed@example.com
+
+Date: Thu, 15 Jul 2010 13:54:17 -0700
+From: please-change-me@config-initializers-devise.com
+To: joe_unconfirmed@example.com
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<p>Welcome joe_unconfirmed@example.com!</p>
+
+<p>You can confirm your account through the link below:</p>
+
+<p><a href="http://test.host/users/confirmation?confirmation_token=tLQE8R4VA-A8a_z3nxve">Confirm my account</a></p>
+REQUESTING PAGE: GET /users/sign_out with {} and HTTP headers {}
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-07-15 13:54:26) [GET]
+Redirected to http://www.example.com/
+Completed in 8ms (DB: 0) | 302 Found [http://www.example.com/users/sign_out]
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/users/sign_out"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 13:54:26) [GET]
+  [4;36;1mBeer Load (0.6ms)[0m   [0;1mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 83ms (View: 7, DB: 1) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /users/sign_up with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-07-15 13:54:26) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (2.9ms)
+Completed in 26ms (View: 16, DB: 0) | 200 OK [http://www.example.com/users/sign_up]
+REQUESTING PAGE: POST /users with {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}} and HTTP headers {"HTTP_REFERER"=>"/users/sign_up"}
+
+
+Processing RegistrationsController#create (for 127.0.0.1 at 2010-07-15 13:54:26) [POST]
+  Parameters: {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'joe_unconfirmed@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.5ms)[0m   [0;1mINSERT INTO "users" ("encrypted_password", "created_at", "confirmation_sent_at", "last_sign_in_ip", "updated_at", "last_sign_in_at", "sign_in_count", "password_salt", "reset_password_token", "remember_token", "current_sign_in_ip", "confirmation_token", "remember_created_at", "current_sign_in_at", "email", "confirmed_at") VALUES('9a588a47716d493b9df17be579e8fcba0dfd2e23', '2010-07-15 20:54:26', '2010-07-15 20:54:26', NULL, '2010-07-15 20:54:26', NULL, 0, 'qPgoyBct2LZ0bDT4G6DA', NULL, NULL, NULL, 'artPavyk9nY4DKJHccEm', NULL, NULL, 'joe_unconfirmed@example.com', NULL)[0m
+Sent mail to joe_unconfirmed@example.com
+
+Date: Thu, 15 Jul 2010 13:54:26 -0700
+From: please-change-me@config-initializers-devise.com
+To: joe_unconfirmed@example.com
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<p>Welcome joe_unconfirmed@example.com!</p>
+
+<p>You can confirm your account through the link below:</p>
+
+<p><a href="http://test.host/users/confirmation?confirmation_token=artPavyk9nY4DKJHccEm">Confirm my account</a></p>
+REQUESTING PAGE: GET /users/sign_out with {} and HTTP headers {}
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-07-15 13:54:35) [GET]
+Redirected to http://www.example.com/
+Completed in 9ms (DB: 0) | 302 Found [http://www.example.com/users/sign_out]
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/users/sign_out"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 13:54:35) [GET]
+  [4;36;1mBeer Load (0.6ms)[0m   [0;1mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 85ms (View: 7, DB: 1) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /users/sign_up with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-07-15 13:54:36) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (3.0ms)
+Completed in 28ms (View: 17, DB: 0) | 200 OK [http://www.example.com/users/sign_up]
+REQUESTING PAGE: POST /users with {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}} and HTTP headers {"HTTP_REFERER"=>"/users/sign_up"}
+
+
+Processing RegistrationsController#create (for 127.0.0.1 at 2010-07-15 13:54:36) [POST]
+  Parameters: {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'joe_unconfirmed@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.5ms)[0m   [0;1mINSERT INTO "users" ("encrypted_password", "created_at", "confirmation_sent_at", "last_sign_in_ip", "updated_at", "last_sign_in_at", "sign_in_count", "password_salt", "reset_password_token", "remember_token", "current_sign_in_ip", "confirmation_token", "remember_created_at", "current_sign_in_at", "email", "confirmed_at") VALUES('992d0d845a771daccbcc70030fec78ea3927ac1d', '2010-07-15 20:54:36', '2010-07-15 20:54:36', NULL, '2010-07-15 20:54:36', NULL, 0, 'k-ch8LR7zSodu69I8eoS', NULL, NULL, NULL, 'X5iwDJIh_aX5Hfjb7dMr', NULL, NULL, 'joe_unconfirmed@example.com', NULL)[0m
+Sent mail to joe_unconfirmed@example.com
+
+Date: Thu, 15 Jul 2010 13:54:36 -0700
+From: please-change-me@config-initializers-devise.com
+To: joe_unconfirmed@example.com
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<p>Welcome joe_unconfirmed@example.com!</p>
+
+<p>You can confirm your account through the link below:</p>
+
+<p><a href="http://test.host/users/confirmation?confirmation_token=X5iwDJIh_aX5Hfjb7dMr">Confirm my account</a></p>
+REQUESTING PAGE: GET /users/sign_out with {} and HTTP headers {}
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-07-15 13:54:48) [GET]
+Redirected to http://www.example.com/
+Completed in 10ms (DB: 0) | 302 Found [http://www.example.com/users/sign_out]
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/users/sign_out"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 13:54:48) [GET]
+  [4;36;1mBeer Load (0.7ms)[0m   [0;1mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 13ms (View: 6, DB: 1) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /users/sign_up with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-07-15 13:54:48) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (4.0ms)
+Completed in 27ms (View: 17, DB: 0) | 200 OK [http://www.example.com/users/sign_up]
+REQUESTING PAGE: POST /users with {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}} and HTTP headers {"HTTP_REFERER"=>"/users/sign_up"}
+
+
+Processing RegistrationsController#create (for 127.0.0.1 at 2010-07-15 13:54:48) [POST]
+  Parameters: {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'joe_unconfirmed@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.6ms)[0m   [0;1mINSERT INTO "users" ("encrypted_password", "created_at", "confirmation_sent_at", "last_sign_in_ip", "updated_at", "last_sign_in_at", "sign_in_count", "password_salt", "reset_password_token", "remember_token", "current_sign_in_ip", "confirmation_token", "remember_created_at", "current_sign_in_at", "email", "confirmed_at") VALUES('b33154f9b70650d04b0b64217832843b351bedc7', '2010-07-15 20:54:48', '2010-07-15 20:54:48', NULL, '2010-07-15 20:54:48', NULL, 0, '3Gz3_6d2IsFzt16tG4Ni', NULL, NULL, NULL, 'e7581MKT2bZEJZiW8Sue', NULL, NULL, 'joe_unconfirmed@example.com', NULL)[0m
+Sent mail to joe_unconfirmed@example.com
+
+Date: Thu, 15 Jul 2010 13:54:48 -0700
+From: please-change-me@config-initializers-devise.com
+To: joe_unconfirmed@example.com
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<p>Welcome joe_unconfirmed@example.com!</p>
+
+<p>You can confirm your account through the link below:</p>
+
+<p><a href="http://test.host/users/confirmation?confirmation_token=e7581MKT2bZEJZiW8Sue">Confirm my account</a></p>
+REQUESTING PAGE: GET /users/sign_out with {} and HTTP headers {}
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-07-15 14:01:19) [GET]
+Redirected to http://www.example.com/
+Completed in 10ms (DB: 0) | 302 Found [http://www.example.com/users/sign_out]
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/users/sign_out"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 14:01:19) [GET]
+  [4;36;1mBeer Load (0.6ms)[0m   [0;1mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 13ms (View: 6, DB: 1) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /users/sign_up with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-07-15 14:01:19) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (3.2ms)
+Completed in 30ms (View: 19, DB: 0) | 200 OK [http://www.example.com/users/sign_up]
+REQUESTING PAGE: POST /users with {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}} and HTTP headers {"HTTP_REFERER"=>"/users/sign_up"}
+
+
+Processing RegistrationsController#create (for 127.0.0.1 at 2010-07-15 14:01:19) [POST]
+  Parameters: {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'joe_unconfirmed@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.7ms)[0m   [0;1mINSERT INTO "users" ("encrypted_password", "created_at", "confirmation_sent_at", "last_sign_in_ip", "updated_at", "last_sign_in_at", "sign_in_count", "password_salt", "reset_password_token", "remember_token", "current_sign_in_ip", "confirmation_token", "remember_created_at", "current_sign_in_at", "email", "confirmed_at") VALUES('b6c317c428469b2883bb236bb46860c61f2aae37', '2010-07-15 21:01:19', '2010-07-15 21:01:19', NULL, '2010-07-15 21:01:19', NULL, 0, '-Mxe4RQiFzoZRwM-jBgQ', NULL, NULL, NULL, '1Wb0DskODwFkVLrlCJPg', NULL, NULL, 'joe_unconfirmed@example.com', NULL)[0m
+Sent mail to joe_unconfirmed@example.com
+
+Date: Thu, 15 Jul 2010 14:01:19 -0700
+From: please-change-me@config-initializers-devise.com
+To: joe_unconfirmed@example.com
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<p>Welcome joe_unconfirmed@example.com!</p>
+
+<p>You can confirm your account through the link below:</p>
+
+<p><a href="http://test.host/users/confirmation?confirmation_token=1Wb0DskODwFkVLrlCJPg">Confirm my account</a></p>
+REQUESTING PAGE: GET /users/sign_out with {} and HTTP headers {}
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-07-15 14:01:33) [GET]
+Redirected to http://www.example.com/
+Completed in 10ms (DB: 0) | 302 Found [http://www.example.com/users/sign_out]
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/users/sign_out"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 14:01:33) [GET]
+  [4;36;1mBeer Load (0.7ms)[0m   [0;1mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 14ms (View: 6, DB: 1) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /users/sign_up with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-07-15 14:01:33) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (3.3ms)
+Completed in 27ms (View: 17, DB: 0) | 200 OK [http://www.example.com/users/sign_up]
+REQUESTING PAGE: POST /users with {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}} and HTTP headers {"HTTP_REFERER"=>"/users/sign_up"}
+
+
+Processing RegistrationsController#create (for 127.0.0.1 at 2010-07-15 14:01:33) [POST]
+  Parameters: {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}}
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'joe_unconfirmed@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.8ms)[0m   [0;1mINSERT INTO "users" ("encrypted_password", "created_at", "confirmation_sent_at", "last_sign_in_ip", "updated_at", "last_sign_in_at", "sign_in_count", "password_salt", "reset_password_token", "remember_token", "current_sign_in_ip", "confirmation_token", "remember_created_at", "current_sign_in_at", "email", "confirmed_at") VALUES('5e29928f40689a191477e1004d108ff6e6469374', '2010-07-15 21:01:33', '2010-07-15 21:01:33', NULL, '2010-07-15 21:01:33', NULL, 0, 'o7CNScw9Udx15yMYc2fq', NULL, NULL, NULL, 'u1tcAAbYyfN6uA_q8BiM', NULL, NULL, 'joe_unconfirmed@example.com', NULL)[0m
+Sent mail to joe_unconfirmed@example.com
+
+Date: Thu, 15 Jul 2010 14:01:33 -0700
+From: please-change-me@config-initializers-devise.com
+To: joe_unconfirmed@example.com
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<p>Welcome joe_unconfirmed@example.com!</p>
+
+<p>You can confirm your account through the link below:</p>
+
+<p><a href="http://test.host/users/confirmation?confirmation_token=u1tcAAbYyfN6uA_q8BiM">Confirm my account</a></p>
+REQUESTING PAGE: GET /users/sign_out with {} and HTTP headers {}
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-07-15 14:02:05) [GET]
+Redirected to http://www.example.com/
+Completed in 8ms (DB: 0) | 302 Found [http://www.example.com/users/sign_out]
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/users/sign_out"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 14:02:05) [GET]
+  [4;36;1mBeer Load (0.6ms)[0m   [0;1mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 83ms (View: 7, DB: 1) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /users/sign_up with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-07-15 14:02:05) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (3.1ms)
+Completed in 27ms (View: 17, DB: 0) | 200 OK [http://www.example.com/users/sign_up]
+REQUESTING PAGE: POST /users with {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}} and HTTP headers {"HTTP_REFERER"=>"/users/sign_up"}
+
+
+Processing RegistrationsController#create (for 127.0.0.1 at 2010-07-15 14:02:05) [POST]
+  Parameters: {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'joe_unconfirmed@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.5ms)[0m   [0;1mINSERT INTO "users" ("encrypted_password", "created_at", "confirmation_sent_at", "last_sign_in_ip", "updated_at", "last_sign_in_at", "sign_in_count", "password_salt", "reset_password_token", "remember_token", "current_sign_in_ip", "confirmation_token", "remember_created_at", "current_sign_in_at", "email", "confirmed_at") VALUES('82ace835d76fbb2e866a7e483967889644deabaf', '2010-07-15 21:02:05', '2010-07-15 21:02:05', NULL, '2010-07-15 21:02:05', NULL, 0, 'MpRbSSSsnKR6qyKIP8Gi', NULL, NULL, NULL, 'z3HjwX1zmwQK_HXVHeua', NULL, NULL, 'joe_unconfirmed@example.com', NULL)[0m
+Sent mail to joe_unconfirmed@example.com
+
+Date: Thu, 15 Jul 2010 14:02:05 -0700
+From: please-change-me@config-initializers-devise.com
+To: joe_unconfirmed@example.com
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<p>Welcome joe_unconfirmed@example.com!</p>
+
+<p>You can confirm your account through the link below:</p>
+
+<p><a href="http://test.host/users/confirmation?confirmation_token=z3HjwX1zmwQK_HXVHeua">Confirm my account</a></p>
+REQUESTING PAGE: GET /users/sign_out with {} and HTTP headers {}
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-07-15 14:03:42) [GET]
+Redirected to http://www.example.com/
+Completed in 9ms (DB: 0) | 302 Found [http://www.example.com/users/sign_out]
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/users/sign_out"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 14:03:42) [GET]
+  [4;36;1mBeer Load (0.8ms)[0m   [0;1mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 14ms (View: 6, DB: 1) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /users/sign_up with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-07-15 14:03:42) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (2.9ms)
+Completed in 29ms (View: 19, DB: 0) | 200 OK [http://www.example.com/users/sign_up]
+REQUESTING PAGE: POST /users with {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}} and HTTP headers {"HTTP_REFERER"=>"/users/sign_up"}
+
+
+Processing RegistrationsController#create (for 127.0.0.1 at 2010-07-15 14:03:42) [POST]
+  Parameters: {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'joe_unconfirmed@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.7ms)[0m   [0;1mINSERT INTO "users" ("encrypted_password", "created_at", "confirmation_sent_at", "last_sign_in_ip", "updated_at", "last_sign_in_at", "sign_in_count", "password_salt", "reset_password_token", "remember_token", "current_sign_in_ip", "confirmation_token", "remember_created_at", "current_sign_in_at", "email", "confirmed_at") VALUES('e1ec8f8402efad6f014b870acc028690ba4cab3c', '2010-07-15 21:03:42', '2010-07-15 21:03:42', NULL, '2010-07-15 21:03:42', NULL, 0, 'MHgwXtJIAKQPGkyUiXUr', NULL, NULL, NULL, 'iZ2-8xaC30UJjeoSEs6k', NULL, NULL, 'joe_unconfirmed@example.com', NULL)[0m
+Sent mail to joe_unconfirmed@example.com
+
+Date: Thu, 15 Jul 2010 14:03:42 -0700
+From: please-change-me@config-initializers-devise.com
+To: joe_unconfirmed@example.com
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<p>Welcome joe_unconfirmed@example.com!</p>
+
+<p>You can confirm your account through the link below:</p>
+
+<p><a href="http://test.host/users/confirmation?confirmation_token=iZ2-8xaC30UJjeoSEs6k">Confirm my account</a></p>
+REQUESTING PAGE: GET /users/sign_out with {} and HTTP headers {}
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-07-15 14:03:42) [GET]
+Redirected to http://www.example.com/
+Completed in 2ms (DB: 1) | 302 Found [http://www.example.com/users/sign_out]
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/users/sign_out"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 14:03:42) [GET]
+  [4;35;1mBeer Load (0.3ms)[0m   [0mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://www.example.com/]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = 'joe3@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.5ms)[0m   [0mINSERT INTO "users" ("encrypted_password", "created_at", "confirmation_sent_at", "last_sign_in_ip", "updated_at", "last_sign_in_at", "sign_in_count", "password_salt", "reset_password_token", "remember_token", "current_sign_in_ip", "confirmation_token", "remember_created_at", "current_sign_in_at", "email", "confirmed_at") VALUES('4db543f737dee30ecb20a7673fcf6bdbf236658f', '2010-07-15 21:03:42', '2010-07-15 21:03:42', NULL, '2010-07-15 21:03:42', NULL, 0, 'QROGrJ5CtF12qxbFrthv', NULL, NULL, NULL, 'YpKToRlNWlIHV6-AoUh6', NULL, NULL, 'joe3@example.com', NULL)[0m
+Sent mail to joe3@example.com
+
+Date: Thu, 15 Jul 2010 14:03:42 -0700
+From: please-change-me@config-initializers-devise.com
+To: joe3@example.com
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<p>Welcome joe3@example.com!</p>
+
+<p>You can confirm your account through the link below:</p>
+
+<p><a href="http://test.host/users/confirmation?confirmation_token=YpKToRlNWlIHV6-AoUh6">Confirm my account</a></p>
+  [4;36;1mUser Update (0.6ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2010-07-15 21:03:42', "confirmed_at" = '2010-07-15 21:03:42', "confirmation_token" = NULL WHERE "id" = 2[0m
+REQUESTING PAGE: GET /users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-15 14:03:42) [GET]
+Rendering sessions/new
+Rendered shared/_devise_links (2.1ms)
+Completed in 15ms (View: 13, DB: 1) | 200 OK [http://www.example.com/users/sign_in]
+REQUESTING PAGE: POST /users/sign_in with {"commit"=>"Sign in", "user"=>{"remember_me"=>"0", "password"=>"password", "email"=>"joe3@example.com"}} and HTTP headers {"HTTP_REFERER"=>"/users/sign_in"}
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-07-15 14:03:43) [POST]
+  Parameters: {"commit"=>"Sign in", "user"=>{"remember_me"=>"0", "password"=>"password", "email"=>"joe3@example.com"}}
+  [4;35;1mUser Load (0.9ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'joe3@example.com') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2010-07-15 21:03:43', "sign_in_count" = 1, "current_sign_in_at" = '2010-07-15 21:03:43', "current_sign_in_ip" = '127.0.0.1', "last_sign_in_at" = '2010-07-15 21:03:43', "last_sign_in_ip" = '127.0.0.1' WHERE "id" = 2[0m
+Redirected to http://www.example.com/users
+Completed in 20ms (DB: 1) | 302 Found [http://www.example.com/users/sign_in]
+REQUESTING PAGE: GET http://www.example.com/users with {} and HTTP headers {"HTTP_REFERER"=>"/users/sign_in"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 14:03:43) [GET]
+  [4;35;1mBeer Load (0.3ms)[0m   [0mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://www.example.com/users]
+REQUESTING PAGE: GET /users/sign_out with {} and HTTP headers {}
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-07-15 15:45:30) [GET]
+Redirected to http://www.example.com/
+Completed in 8ms (DB: 0) | 302 Found [http://www.example.com/users/sign_out]
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/users/sign_out"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 15:45:30) [GET]
+  [4;36;1mBeer Load (0.6ms)[0m   [0;1mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 13ms (View: 6, DB: 1) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /users/sign_up with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-07-15 15:45:30) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (3.7ms)
+Completed in 29ms (View: 19, DB: 0) | 200 OK [http://www.example.com/users/sign_up]
+REQUESTING PAGE: POST /users with {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}} and HTTP headers {"HTTP_REFERER"=>"/users/sign_up"}
+
+
+Processing RegistrationsController#create (for 127.0.0.1 at 2010-07-15 15:45:30) [POST]
+  Parameters: {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'joe_unconfirmed@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.6ms)[0m   [0;1mINSERT INTO "users" ("encrypted_password", "created_at", "confirmation_sent_at", "last_sign_in_ip", "updated_at", "last_sign_in_at", "sign_in_count", "password_salt", "reset_password_token", "remember_token", "current_sign_in_ip", "confirmation_token", "remember_created_at", "current_sign_in_at", "email", "confirmed_at") VALUES('e96b8c9a2f35c23ab6a828bab66bd88766db7512', '2010-07-15 22:45:30', '2010-07-15 22:45:30', NULL, '2010-07-15 22:45:30', NULL, 0, '8JTOEdlkHqN6EBIbTTIZ', NULL, NULL, NULL, 'riez5IolNxaUGN3bk8x2', NULL, NULL, 'joe_unconfirmed@example.com', NULL)[0m
+Sent mail to joe_unconfirmed@example.com
+
+Date: Thu, 15 Jul 2010 15:45:30 -0700
+From: please-change-me@config-initializers-devise.com
+To: joe_unconfirmed@example.com
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<p>Welcome joe_unconfirmed@example.com!</p>
+
+<p>You can confirm your account through the link below:</p>
+
+<p><a href="http://test.host/users/confirmation?confirmation_token=riez5IolNxaUGN3bk8x2">Confirm my account</a></p>
+REQUESTING PAGE: GET /users/sign_out with {} and HTTP headers {}
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-07-15 15:45:31) [GET]
+Redirected to http://www.example.com/
+Completed in 2ms (DB: 1) | 302 Found [http://www.example.com/users/sign_out]
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/users/sign_out"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 15:45:31) [GET]
+  [4;35;1mBeer Load (0.3ms)[0m   [0mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://www.example.com/]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = 'joe3@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO "users" ("encrypted_password", "created_at", "confirmation_sent_at", "last_sign_in_ip", "updated_at", "last_sign_in_at", "sign_in_count", "password_salt", "reset_password_token", "remember_token", "current_sign_in_ip", "confirmation_token", "remember_created_at", "current_sign_in_at", "email", "confirmed_at") VALUES('7f2dcac15ea68860b6684f5ba38745d70c36e74a', '2010-07-15 22:45:31', '2010-07-15 22:45:31', NULL, '2010-07-15 22:45:31', NULL, 0, 'SUeV8NlEtrolCCUNGJCa', NULL, NULL, NULL, 'AQLOVis9q8WIn1qLHfiN', NULL, NULL, 'joe3@example.com', NULL)[0m
+Sent mail to joe3@example.com
+
+Date: Thu, 15 Jul 2010 15:45:31 -0700
+From: please-change-me@config-initializers-devise.com
+To: joe3@example.com
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<p>Welcome joe3@example.com!</p>
+
+<p>You can confirm your account through the link below:</p>
+
+<p><a href="http://test.host/users/confirmation?confirmation_token=AQLOVis9q8WIn1qLHfiN">Confirm my account</a></p>
+  [4;36;1mUser Update (0.5ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2010-07-15 22:45:31', "confirmed_at" = '2010-07-15 22:45:31', "confirmation_token" = NULL WHERE "id" = 2[0m
+REQUESTING PAGE: GET /users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-15 15:45:31) [GET]
+Rendering sessions/new
+Rendered shared/_devise_links (1.8ms)
+Completed in 14ms (View: 12, DB: 1) | 200 OK [http://www.example.com/users/sign_in]
+REQUESTING PAGE: POST /users/sign_in with {"commit"=>"Sign in", "user"=>{"remember_me"=>"0", "password"=>"password", "email"=>"joe3@example.com"}} and HTTP headers {"HTTP_REFERER"=>"/users/sign_in"}
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-07-15 15:45:31) [POST]
+  Parameters: {"commit"=>"Sign in", "user"=>{"remember_me"=>"0", "password"=>"password", "email"=>"joe3@example.com"}}
+  [4;35;1mUser Load (0.9ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'joe3@example.com') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2010-07-15 22:45:31', "sign_in_count" = 1, "current_sign_in_at" = '2010-07-15 22:45:31', "current_sign_in_ip" = '127.0.0.1', "last_sign_in_at" = '2010-07-15 22:45:31', "last_sign_in_ip" = '127.0.0.1' WHERE "id" = 2[0m
+Redirected to http://www.example.com/users
+Completed in 19ms (DB: 1) | 302 Found [http://www.example.com/users/sign_in]
+REQUESTING PAGE: GET http://www.example.com/users with {} and HTTP headers {"HTTP_REFERER"=>"/users/sign_in"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 15:45:31) [GET]
+  [4;35;1mBeer Load (0.2ms)[0m   [0mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://www.example.com/users]
+REQUESTING PAGE: GET /users/sign_out with {} and HTTP headers {}
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-07-15 15:52:51) [GET]
+Redirected to http://www.example.com/
+Completed in 9ms (DB: 0) | 302 Found [http://www.example.com/users/sign_out]
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/users/sign_out"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 15:52:51) [GET]
+  [4;36;1mBeer Load (0.6ms)[0m   [0;1mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 13ms (View: 6, DB: 1) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /users/sign_up with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-07-15 15:52:51) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (3.6ms)
+Completed in 27ms (View: 17, DB: 0) | 200 OK [http://www.example.com/users/sign_up]
+REQUESTING PAGE: POST /users with {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}} and HTTP headers {"HTTP_REFERER"=>"/users/sign_up"}
+
+
+Processing RegistrationsController#create (for 127.0.0.1 at 2010-07-15 15:52:51) [POST]
+  Parameters: {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'joe_unconfirmed@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.6ms)[0m   [0;1mINSERT INTO "users" ("encrypted_password", "created_at", "confirmation_sent_at", "last_sign_in_ip", "updated_at", "last_sign_in_at", "sign_in_count", "password_salt", "reset_password_token", "remember_token", "current_sign_in_ip", "confirmation_token", "remember_created_at", "current_sign_in_at", "email", "confirmed_at") VALUES('38f4d7d76d6149441516f4ba88dfdab514549efd', '2010-07-15 22:52:51', '2010-07-15 22:52:51', NULL, '2010-07-15 22:52:51', NULL, 0, 'VkNrM9YsThidekOdNyWE', NULL, NULL, NULL, '9hbfIahNVIbPmt4lgjoz', NULL, NULL, 'joe_unconfirmed@example.com', NULL)[0m
+Sent mail to joe_unconfirmed@example.com
+
+Date: Thu, 15 Jul 2010 15:52:51 -0700
+From: please-change-me@config-initializers-devise.com
+To: joe_unconfirmed@example.com
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<p>Welcome joe_unconfirmed@example.com!</p>
+
+<p>You can confirm your account through the link below:</p>
+
+<p><a href="http://test.host/users/confirmation?confirmation_token=9hbfIahNVIbPmt4lgjoz">Confirm my account</a></p>
+REQUESTING PAGE: GET /users/sign_out with {} and HTTP headers {}
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-07-15 15:52:51) [GET]
+Redirected to http://www.example.com/
+Completed in 1ms (DB: 1) | 302 Found [http://www.example.com/users/sign_out]
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/users/sign_out"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 15:52:51) [GET]
+  [4;35;1mBeer Load (0.4ms)[0m   [0mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://www.example.com/]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = 'joe3@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO "users" ("encrypted_password", "created_at", "confirmation_sent_at", "last_sign_in_ip", "updated_at", "last_sign_in_at", "sign_in_count", "password_salt", "reset_password_token", "remember_token", "current_sign_in_ip", "confirmation_token", "remember_created_at", "current_sign_in_at", "email", "confirmed_at") VALUES('3f7cff12a7269942ca0884825be2ebd72b9affb5', '2010-07-15 22:52:51', '2010-07-15 22:52:51', NULL, '2010-07-15 22:52:51', NULL, 0, 'T8tg3F_XO5mi01YR3cey', NULL, NULL, NULL, 'v07_wilFT845OTtTJc6t', NULL, NULL, 'joe3@example.com', NULL)[0m
+Sent mail to joe3@example.com
+
+Date: Thu, 15 Jul 2010 15:52:51 -0700
+From: please-change-me@config-initializers-devise.com
+To: joe3@example.com
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<p>Welcome joe3@example.com!</p>
+
+<p>You can confirm your account through the link below:</p>
+
+<p><a href="http://test.host/users/confirmation?confirmation_token=v07_wilFT845OTtTJc6t">Confirm my account</a></p>
+  [4;36;1mUser Update (0.5ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2010-07-15 22:52:51', "confirmed_at" = '2010-07-15 22:52:51', "confirmation_token" = NULL WHERE "id" = 2[0m
+REQUESTING PAGE: GET /users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-15 15:52:51) [GET]
+Rendering sessions/new
+Rendered shared/_devise_links (1.6ms)
+Completed in 13ms (View: 11, DB: 1) | 200 OK [http://www.example.com/users/sign_in]
+REQUESTING PAGE: POST /users/sign_in with {"commit"=>"Sign in", "user"=>{"remember_me"=>"0", "password"=>"password", "email"=>"joe3@example.com"}} and HTTP headers {"HTTP_REFERER"=>"/users/sign_in"}
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-07-15 15:52:51) [POST]
+  Parameters: {"commit"=>"Sign in", "user"=>{"remember_me"=>"0", "password"=>"password", "email"=>"joe3@example.com"}}
+  [4;35;1mUser Load (0.9ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'joe3@example.com') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2010-07-15 22:52:51', "sign_in_count" = 1, "current_sign_in_at" = '2010-07-15 22:52:51', "current_sign_in_ip" = '127.0.0.1', "last_sign_in_at" = '2010-07-15 22:52:51', "last_sign_in_ip" = '127.0.0.1' WHERE "id" = 2[0m
+Redirected to http://www.example.com/users
+Completed in 20ms (DB: 1) | 302 Found [http://www.example.com/users/sign_in]
+REQUESTING PAGE: GET http://www.example.com/users with {} and HTTP headers {"HTTP_REFERER"=>"/users/sign_in"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 15:52:51) [GET]
+  [4;35;1mBeer Load (0.2ms)[0m   [0mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://www.example.com/users]
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 15:53:13) [GET]
+  [4;36;1mBeer Load (0.3ms)[0m   [0;1mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 11ms (View: 4, DB: 0) | 200 OK [http://localhost/users]
+REQUESTING PAGE: GET /users/sign_out with {} and HTTP headers {}
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-07-15 15:54:18) [GET]
+Redirected to http://www.example.com/
+Completed in 8ms (DB: 0) | 302 Found [http://www.example.com/users/sign_out]
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/users/sign_out"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 15:54:18) [GET]
+  [4;36;1mBeer Load (0.5ms)[0m   [0;1mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /users/sign_up with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-07-15 15:54:18) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (12.0ms)
+Completed in 105ms (View: 96, DB: 0) | 200 OK [http://www.example.com/users/sign_up]
+REQUESTING PAGE: POST /users with {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}} and HTTP headers {"HTTP_REFERER"=>"/users/sign_up"}
+
+
+Processing RegistrationsController#create (for 127.0.0.1 at 2010-07-15 15:54:18) [POST]
+  Parameters: {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'joe_unconfirmed@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.6ms)[0m   [0;1mINSERT INTO "users" ("encrypted_password", "created_at", "confirmation_sent_at", "last_sign_in_ip", "updated_at", "last_sign_in_at", "sign_in_count", "password_salt", "reset_password_token", "remember_token", "current_sign_in_ip", "confirmation_token", "remember_created_at", "current_sign_in_at", "email", "confirmed_at") VALUES('cb1590e0c370736aaf169f46aa46fb4931ce1bb7', '2010-07-15 22:54:18', '2010-07-15 22:54:18', NULL, '2010-07-15 22:54:18', NULL, 0, 'QzCfTqNQSXXXxCIrfAW0', NULL, NULL, NULL, 'tiLSRabX6hfsGq6_fLru', NULL, NULL, 'joe_unconfirmed@example.com', NULL)[0m
+Sent mail to joe_unconfirmed@example.com
+
+Date: Thu, 15 Jul 2010 15:54:18 -0700
+From: please-change-me@config-initializers-devise.com
+To: joe_unconfirmed@example.com
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<p>Welcome joe_unconfirmed@example.com!</p>
+
+<p>You can confirm your account through the link below:</p>
+
+<p><a href="http://test.host/users/confirmation?confirmation_token=tiLSRabX6hfsGq6_fLru">Confirm my account</a></p>
+REQUESTING PAGE: GET /users/sign_out with {} and HTTP headers {}
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-07-15 15:54:18) [GET]
+Redirected to http://www.example.com/
+Completed in 2ms (DB: 1) | 302 Found [http://www.example.com/users/sign_out]
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/users/sign_out"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 15:54:18) [GET]
+  [4;35;1mBeer Load (0.3ms)[0m   [0mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://www.example.com/]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = 'joe3@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.5ms)[0m   [0mINSERT INTO "users" ("encrypted_password", "created_at", "confirmation_sent_at", "last_sign_in_ip", "updated_at", "last_sign_in_at", "sign_in_count", "password_salt", "reset_password_token", "remember_token", "current_sign_in_ip", "confirmation_token", "remember_created_at", "current_sign_in_at", "email", "confirmed_at") VALUES('d54d9ecd89c85f01e0394fa81273107474d659e6', '2010-07-15 22:54:18', '2010-07-15 22:54:18', NULL, '2010-07-15 22:54:18', NULL, 0, '6z00aSG6To8BZA7aB3N1', NULL, NULL, NULL, 'rHoIvd5swnq4in-u8OGR', NULL, NULL, 'joe3@example.com', NULL)[0m
+Sent mail to joe3@example.com
+
+Date: Thu, 15 Jul 2010 15:54:18 -0700
+From: please-change-me@config-initializers-devise.com
+To: joe3@example.com
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<p>Welcome joe3@example.com!</p>
+
+<p>You can confirm your account through the link below:</p>
+
+<p><a href="http://test.host/users/confirmation?confirmation_token=rHoIvd5swnq4in-u8OGR">Confirm my account</a></p>
+  [4;36;1mUser Update (0.5ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2010-07-15 22:54:18', "confirmed_at" = '2010-07-15 22:54:18', "confirmation_token" = NULL WHERE "id" = 2[0m
+REQUESTING PAGE: GET /users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-15 15:54:18) [GET]
+Rendering sessions/new
+Rendered shared/_devise_links (1.7ms)
+Completed in 13ms (View: 11, DB: 1) | 200 OK [http://www.example.com/users/sign_in]
+REQUESTING PAGE: POST /users/sign_in with {"commit"=>"Sign in", "user"=>{"remember_me"=>"0", "password"=>"password", "email"=>"joe3@example.com"}} and HTTP headers {"HTTP_REFERER"=>"/users/sign_in"}
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-07-15 15:54:18) [POST]
+  Parameters: {"commit"=>"Sign in", "user"=>{"remember_me"=>"0", "password"=>"password", "email"=>"joe3@example.com"}}
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'joe3@example.com') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2010-07-15 22:54:18', "sign_in_count" = 1, "current_sign_in_at" = '2010-07-15 22:54:18', "current_sign_in_ip" = '127.0.0.1', "last_sign_in_at" = '2010-07-15 22:54:18', "last_sign_in_ip" = '127.0.0.1' WHERE "id" = 2[0m
+Redirected to http://www.example.com/users
+Completed in 19ms (DB: 1) | 302 Found [http://www.example.com/users/sign_in]
+REQUESTING PAGE: GET http://www.example.com/users with {} and HTTP headers {"HTTP_REFERER"=>"/users/sign_in"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 15:54:18) [GET]
+  [4;35;1mBeer Load (0.2ms)[0m   [0mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://www.example.com/users]
+REQUESTING PAGE: GET /users/sign_out with {} and HTTP headers {}
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-07-15 15:54:49) [GET]
+Redirected to http://www.example.com/
+Completed in 9ms (DB: 0) | 302 Found [http://www.example.com/users/sign_out]
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/users/sign_out"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 15:54:49) [GET]
+  [4;36;1mBeer Load (0.6ms)[0m   [0;1mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 14ms (View: 7, DB: 1) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /users/sign_up with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-07-15 15:54:49) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (3.1ms)
+Completed in 28ms (View: 16, DB: 0) | 200 OK [http://www.example.com/users/sign_up]
+REQUESTING PAGE: POST /users with {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}} and HTTP headers {"HTTP_REFERER"=>"/users/sign_up"}
+
+
+Processing RegistrationsController#create (for 127.0.0.1 at 2010-07-15 15:54:49) [POST]
+  Parameters: {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'joe_unconfirmed@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.7ms)[0m   [0;1mINSERT INTO "users" ("encrypted_password", "created_at", "confirmation_sent_at", "last_sign_in_ip", "updated_at", "last_sign_in_at", "sign_in_count", "password_salt", "reset_password_token", "remember_token", "current_sign_in_ip", "confirmation_token", "remember_created_at", "current_sign_in_at", "email", "confirmed_at") VALUES('742ab766d8e2ab416fd3f5f2a45cc22b8d5661ec', '2010-07-15 22:54:49', '2010-07-15 22:54:49', NULL, '2010-07-15 22:54:49', NULL, 0, 'eK_zvs9O73zuhKXo5sQ5', NULL, NULL, NULL, 'TjI90r3-bFLsTjoh2WvB', NULL, NULL, 'joe_unconfirmed@example.com', NULL)[0m
+Sent mail to joe_unconfirmed@example.com
+
+Date: Thu, 15 Jul 2010 15:54:49 -0700
+From: please-change-me@config-initializers-devise.com
+To: joe_unconfirmed@example.com
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<p>Welcome joe_unconfirmed@example.com!</p>
+
+<p>You can confirm your account through the link below:</p>
+
+<p><a href="http://test.host/users/confirmation?confirmation_token=TjI90r3-bFLsTjoh2WvB">Confirm my account</a></p>
+REQUESTING PAGE: GET /users/sign_out with {} and HTTP headers {}
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-07-15 15:54:49) [GET]
+Redirected to http://www.example.com/
+Completed in 4ms (DB: 1) | 302 Found [http://www.example.com/users/sign_out]
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/users/sign_out"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 15:54:49) [GET]
+  [4;35;1mBeer Load (0.3ms)[0m   [0mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://www.example.com/]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = 'joe3@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.6ms)[0m   [0mINSERT INTO "users" ("encrypted_password", "created_at", "confirmation_sent_at", "last_sign_in_ip", "updated_at", "last_sign_in_at", "sign_in_count", "password_salt", "reset_password_token", "remember_token", "current_sign_in_ip", "confirmation_token", "remember_created_at", "current_sign_in_at", "email", "confirmed_at") VALUES('953da0c1089e1e36d3cc5d1255d9d59b058ebbac', '2010-07-15 22:54:49', '2010-07-15 22:54:49', NULL, '2010-07-15 22:54:49', NULL, 0, 'YvmQOBws1EL_Er09chYh', NULL, NULL, NULL, 'rWyqSOIVNR4CeSsKD_Zv', NULL, NULL, 'joe3@example.com', NULL)[0m
+Sent mail to joe3@example.com
+
+Date: Thu, 15 Jul 2010 15:54:49 -0700
+From: please-change-me@config-initializers-devise.com
+To: joe3@example.com
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<p>Welcome joe3@example.com!</p>
+
+<p>You can confirm your account through the link below:</p>
+
+<p><a href="http://test.host/users/confirmation?confirmation_token=rWyqSOIVNR4CeSsKD_Zv">Confirm my account</a></p>
+  [4;36;1mUser Update (0.6ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2010-07-15 22:54:49', "confirmed_at" = '2010-07-15 22:54:49', "confirmation_token" = NULL WHERE "id" = 2[0m
+REQUESTING PAGE: GET /users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-15 15:54:49) [GET]
+Rendering sessions/new
+Rendered shared/_devise_links (1.7ms)
+Completed in 13ms (View: 11, DB: 2) | 200 OK [http://www.example.com/users/sign_in]
+REQUESTING PAGE: POST /users/sign_in with {"commit"=>"Sign in", "user"=>{"remember_me"=>"0", "password"=>"password", "email"=>"joe3@example.com"}} and HTTP headers {"HTTP_REFERER"=>"/users/sign_in"}
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-07-15 15:54:50) [POST]
+  Parameters: {"commit"=>"Sign in", "user"=>{"remember_me"=>"0", "password"=>"password", "email"=>"joe3@example.com"}}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'joe3@example.com') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2010-07-15 22:54:50', "sign_in_count" = 1, "current_sign_in_at" = '2010-07-15 22:54:50', "current_sign_in_ip" = '127.0.0.1', "last_sign_in_at" = '2010-07-15 22:54:50', "last_sign_in_ip" = '127.0.0.1' WHERE "id" = 2[0m
+Redirected to http://www.example.com/users
+Completed in 22ms (DB: 1) | 302 Found [http://www.example.com/users/sign_in]
+REQUESTING PAGE: GET http://www.example.com/users with {} and HTTP headers {"HTTP_REFERER"=>"/users/sign_in"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-15 15:54:50) [GET]
+  [4;35;1mBeer Load (0.2ms)[0m   [0mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://www.example.com/users]
+REQUESTING PAGE: GET /users/sign_out with {} and HTTP headers {}
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-07-16 06:36:28) [GET]
+Redirected to http://www.example.com/
+Completed in 42ms (DB: 0) | 302 Found [http://www.example.com/users/sign_out]
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/users/sign_out"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-16 06:36:28) [GET]
+  [4;36;1mBeer Load (0.6ms)[0m   [0;1mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 32ms (View: 24, DB: 1) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /users/sign_up with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-07-16 06:36:28) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (2.9ms)
+Completed in 26ms (View: 17, DB: 0) | 200 OK [http://www.example.com/users/sign_up]
+REQUESTING PAGE: POST /users with {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}} and HTTP headers {"HTTP_REFERER"=>"/users/sign_up"}
+
+
+Processing RegistrationsController#create (for 127.0.0.1 at 2010-07-16 06:36:28) [POST]
+  Parameters: {"commit"=>"Sign up", "user"=>{"password_confirmation"=>"password", "password"=>"password", "email"=>"joe_unconfirmed@example.com"}}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'joe_unconfirmed@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.7ms)[0m   [0;1mINSERT INTO "users" ("encrypted_password", "created_at", "confirmation_sent_at", "last_sign_in_ip", "updated_at", "last_sign_in_at", "sign_in_count", "password_salt", "reset_password_token", "remember_token", "current_sign_in_ip", "confirmation_token", "remember_created_at", "current_sign_in_at", "email", "confirmed_at") VALUES('36291554910f7dcd38c2707dea30dc10ddccade9', '2010-07-16 13:36:28', '2010-07-16 13:36:28', NULL, '2010-07-16 13:36:28', NULL, 0, 'dhto2fwrGok7uG0Y2Av2', NULL, NULL, NULL, '0K2HBzpcQyx87NubGMiu', NULL, NULL, 'joe_unconfirmed@example.com', NULL)[0m
+Sent mail to joe_unconfirmed@example.com
+
+Date: Fri, 16 Jul 2010 06:36:28 -0700
+From: please-change-me@config-initializers-devise.com
+To: joe_unconfirmed@example.com
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<p>Welcome joe_unconfirmed@example.com!</p>
+
+<p>You can confirm your account through the link below:</p>
+
+<p><a href="http://test.host/users/confirmation?confirmation_token=0K2HBzpcQyx87NubGMiu">Confirm my account</a></p>
+REQUESTING PAGE: GET /users/sign_out with {} and HTTP headers {}
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-07-16 06:36:28) [GET]
+Redirected to http://www.example.com/
+Completed in 3ms (DB: 1) | 302 Found [http://www.example.com/users/sign_out]
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/users/sign_out"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-16 06:36:28) [GET]
+  [4;35;1mBeer Load (0.2ms)[0m   [0mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://www.example.com/]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = 'joe3@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.5ms)[0m   [0mINSERT INTO "users" ("encrypted_password", "created_at", "confirmation_sent_at", "last_sign_in_ip", "updated_at", "last_sign_in_at", "sign_in_count", "password_salt", "reset_password_token", "remember_token", "current_sign_in_ip", "confirmation_token", "remember_created_at", "current_sign_in_at", "email", "confirmed_at") VALUES('a90d3c61c9c8431cc708173d68dc5c5beae3015e', '2010-07-16 13:36:28', '2010-07-16 13:36:28', NULL, '2010-07-16 13:36:28', NULL, 0, 'snqel5ntOI-Dr0Rp9hdx', NULL, NULL, NULL, 'VyGD5c8AikZ_gMnX1MSH', NULL, NULL, 'joe3@example.com', NULL)[0m
+Sent mail to joe3@example.com
+
+Date: Fri, 16 Jul 2010 06:36:28 -0700
+From: please-change-me@config-initializers-devise.com
+To: joe3@example.com
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<p>Welcome joe3@example.com!</p>
+
+<p>You can confirm your account through the link below:</p>
+
+<p><a href="http://test.host/users/confirmation?confirmation_token=VyGD5c8AikZ_gMnX1MSH">Confirm my account</a></p>
+  [4;36;1mUser Update (0.5ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2010-07-16 13:36:28', "confirmed_at" = '2010-07-16 13:36:28', "confirmation_token" = NULL WHERE "id" = 1[0m
+REQUESTING PAGE: GET /users/sign_in with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-16 06:36:28) [GET]
+Rendering sessions/new
+Rendered shared/_devise_links (1.4ms)
+Completed in 12ms (View: 10, DB: 1) | 200 OK [http://www.example.com/users/sign_in]
+REQUESTING PAGE: POST /users/sign_in with {"commit"=>"Sign in", "user"=>{"remember_me"=>"0", "password"=>"password", "email"=>"joe3@example.com"}} and HTTP headers {"HTTP_REFERER"=>"/users/sign_in"}
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-07-16 06:36:28) [POST]
+  Parameters: {"commit"=>"Sign in", "user"=>{"remember_me"=>"0", "password"=>"password", "email"=>"joe3@example.com"}}
+  [4;35;1mUser Load (1.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'joe3@example.com') LIMIT 1[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2010-07-16 13:36:28', "sign_in_count" = 1, "current_sign_in_at" = '2010-07-16 13:36:28', "current_sign_in_ip" = '127.0.0.1', "last_sign_in_at" = '2010-07-16 13:36:28', "last_sign_in_ip" = '127.0.0.1' WHERE "id" = 1[0m
+Redirected to http://www.example.com/users
+Completed in 82ms (DB: 1) | 302 Found [http://www.example.com/users/sign_in]
+REQUESTING PAGE: GET http://www.example.com/users with {} and HTTP headers {"HTTP_REFERER"=>"/users/sign_in"}
+
+
+Processing BeersController#index (for 127.0.0.1 at 2010-07-16 06:36:28) [GET]
+  [4;35;1mBeer Load (0.3ms)[0m   [0mSELECT * FROM "beers" [0m
+Rendering template within layouts/beers
+Rendering beers/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://www.example.com/users]
